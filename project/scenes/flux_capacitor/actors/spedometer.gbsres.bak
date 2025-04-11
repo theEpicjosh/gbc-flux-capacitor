@@ -1,0 +1,56 @@
+{
+  "_resourceType": "actor",
+  "id": "1fa7c89c-89e9-4114-bf1a-61e2be98b78e",
+  "name": "Spedometer",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "c1bf69b3-9c41-4b52-a694-26f1e738fb75",
+  "prefabId": "",
+  "direction": "up",
+  "moveSpeed": 1,
+  "animSpeed": 255,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "symbol": "actor_10",
+  "script": [],
+  "startScript": [
+    {
+      "command": "EVENT_IF_INPUT",
+      "args": {
+        "input": [
+          "a",
+          "b",
+          "right",
+          "down",
+          "up",
+          "left"
+        ],
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+            "args": {
+              "actorId": "$self$",
+              "speed": 3
+            },
+            "id": "49775874-5205-4cd9-bb8a-f80f19b659e5"
+          }
+        ],
+        "false": []
+      },
+      "id": "e90db3c5-3163-497f-a896-fb38fc933ac6"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 3,
+  "y": 14,
+  "_index": 0
+}

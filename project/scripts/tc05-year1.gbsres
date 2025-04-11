@@ -1,0 +1,61 @@
+{
+  "_resourceType": "script",
+  "id": "0b7ac6ef-2013-46ce-a584-c56c0705191a",
+  "name": "TC05-Year1",
+  "description": "",
+  "variables": {
+    "V0": {
+      "id": "V0",
+      "name": "CurrentDigit",
+      "passByReference": true
+    }
+  },
+  "actors": {},
+  "symbol": "script_6",
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "4",
+        "value": {
+          "type": "variable",
+          "value": "V0"
+        },
+        "__collapse": false
+      },
+      "id": "da1786cb-6bdf-42b0-80c7-54746067b9ac"
+    },
+    {
+      "command": "EVENT_REPLACE_TILE_XY",
+      "args": {
+        "x": {
+          "type": "number",
+          "value": 11
+        },
+        "y": {
+          "type": "number",
+          "value": 1
+        },
+        "tilesetId": "d1e82a77-195e-47e4-942f-4882a6e99549",
+        "tileIndex": {
+          "type": "variable",
+          "value": "4"
+        },
+        "__collapse": false
+      },
+      "id": "1157cbb5-b965-4f83-9ebc-8670a5b6a65b"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "12",
+        "value": {
+          "type": "number",
+          "value": 5
+        },
+        "__collapse": false
+      },
+      "id": "427c3bd7-376d-4dae-a373-7bc0ae28e5f6"
+    }
+  ]
+}

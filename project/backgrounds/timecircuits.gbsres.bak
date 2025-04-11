@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "26c11ba0-3d9d-4ca7-8797-7c9304da5735",
+  "name": "timecircuits",
+  "symbol": "bg_timecircuits",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "timecircuits.png",
+  "tileColors": "033+00e+034+0011+034+00f+034+0010+034+0111+035+012+002+01a+036+023+00!02a+034+026+00!02a+035+025+003+026+03b7+",
+  "autoColor": true
+}

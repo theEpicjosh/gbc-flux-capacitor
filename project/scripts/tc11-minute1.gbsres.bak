@@ -1,0 +1,61 @@
+{
+  "_resourceType": "script",
+  "id": "8069084c-f072-494b-b6b9-0c930348204d",
+  "name": "TC11-Minute1",
+  "description": "",
+  "variables": {
+    "V0": {
+      "id": "V0",
+      "name": "CurrentDigit",
+      "passByReference": true
+    }
+  },
+  "actors": {},
+  "symbol": "script_12",
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "10",
+        "value": {
+          "type": "variable",
+          "value": "V0"
+        },
+        "__collapse": false
+      },
+      "id": "bdbb617e-d086-4a4b-a112-25d37cc77bca"
+    },
+    {
+      "command": "EVENT_REPLACE_TILE_XY",
+      "args": {
+        "x": {
+          "type": "number",
+          "value": 17
+        },
+        "y": {
+          "type": "number",
+          "value": 1
+        },
+        "tilesetId": "d1e82a77-195e-47e4-942f-4882a6e99549",
+        "tileIndex": {
+          "type": "variable",
+          "value": "10"
+        },
+        "__collapse": false
+      },
+      "id": "481a3270-8f0b-4999-9ccc-ecf1db864d0a"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "12",
+        "value": {
+          "type": "number",
+          "value": 11
+        },
+        "__collapse": false
+      },
+      "id": "d2fa7971-a718-4c2b-8d9d-d00d082d809a"
+    }
+  ]
+}

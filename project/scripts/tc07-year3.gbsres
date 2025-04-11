@@ -1,0 +1,101 @@
+{
+  "_resourceType": "script",
+  "id": "878192ae-2b20-4187-84c3-fb9cb1290ac9",
+  "name": "TC07-Year3",
+  "description": "",
+  "variables": {
+    "V0": {
+      "id": "V0",
+      "name": "CurrentDigit",
+      "passByReference": true
+    }
+  },
+  "actors": {},
+  "symbol": "script_8",
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "6",
+        "value": {
+          "type": "variable",
+          "value": "V0"
+        },
+        "__collapse": false
+      },
+      "id": "7d92b522-3903-4f0d-8a68-cba2dcaa8d5e"
+    },
+    {
+      "command": "EVENT_REPLACE_TILE_XY",
+      "args": {
+        "x": {
+          "type": "number",
+          "value": 9
+        },
+        "y": {
+          "type": "number",
+          "value": 1
+        },
+        "tilesetId": "d1e82a77-195e-47e4-942f-4882a6e99549",
+        "tileIndex": {
+          "type": "variable",
+          "value": "4"
+        },
+        "__collapse": false
+      },
+      "id": "968216d1-4967-4de0-a063-b2a2f4fd49f5"
+    },
+    {
+      "command": "EVENT_REPLACE_TILE_XY",
+      "args": {
+        "x": {
+          "type": "number",
+          "value": 10
+        },
+        "y": {
+          "type": "number",
+          "value": 1
+        },
+        "tilesetId": "d1e82a77-195e-47e4-942f-4882a6e99549",
+        "tileIndex": {
+          "type": "variable",
+          "value": "5"
+        },
+        "__collapse": false
+      },
+      "id": "be5322cd-ee38-457d-9051-52f51f0bc609"
+    },
+    {
+      "command": "EVENT_REPLACE_TILE_XY",
+      "args": {
+        "x": {
+          "type": "number",
+          "value": 11
+        },
+        "y": {
+          "type": "number",
+          "value": 1
+        },
+        "tilesetId": "d1e82a77-195e-47e4-942f-4882a6e99549",
+        "tileIndex": {
+          "type": "variable",
+          "value": "6"
+        },
+        "__collapse": false
+      },
+      "id": "b2aa72f8-9bef-4101-ad32-2287555b7d77"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "12",
+        "value": {
+          "type": "number",
+          "value": 7
+        },
+        "__collapse": false
+      },
+      "id": "1a990a4b-7fd9-4e16-92c0-d86e993bcb20"
+    }
+  ]
+}

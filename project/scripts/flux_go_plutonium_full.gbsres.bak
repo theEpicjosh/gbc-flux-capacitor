@@ -1,0 +1,146 @@
+{
+  "_resourceType": "script",
+  "id": "e5572b1d-04d6-43b0-854a-f6011bee05ec",
+  "name": "Flux Go Plutonium Full",
+  "description": "",
+  "variables": {},
+  "actors": {
+    "2": {
+      "id": "2",
+      "name": "Plutonium"
+    }
+  },
+  "symbol": "script_17",
+  "script": [
+    {
+      "command": "EVENT_GROUP",
+      "args": {
+        "__collapse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_HIDE",
+            "args": {
+              "actorId": "player",
+              "__collapse": true
+            },
+            "id": "e513fe02-8614-49ff-ab6c-b0f4d9fedc14"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "2",
+              "spriteStateId": "Full",
+              "loopAnim": false,
+              "__collapse": false
+            },
+            "id": "a68980da-43f7-474c-b070-d1c0b17c7ac1"
+          },
+          {
+            "command": "EVENT_MUSIC_PLAY",
+            "args": {
+              "musicId": "ee8e2c62-9ccc-4933-b968-85cfd1a77b57",
+              "__collapse": true
+            },
+            "id": "ffba71ff-ef34-4d6b-84a3-3576377006a3"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": 1,
+              "frames": 30,
+              "__collapse": true
+            },
+            "id": "6e8a8a63-358c-4f6b-9429-55ba02752335"
+          },
+          {
+            "command": "EVENT_MUSIC_PLAY",
+            "args": {
+              "musicId": "af2b6a55-6d83-4eea-91b0-067cc3a6add7",
+              "__collapse": true
+            },
+            "id": "01d7d028-5fc9-47bf-ae03-fc6672a04457"
+          },
+          {
+            "command": "EVENT_REMOVE_INPUT_SCRIPT",
+            "args": {
+              "input": [
+                "a"
+              ],
+              "__collapse": true
+            },
+            "id": "ec05e2b5-2ba2-458b-afee-58801bcc0972"
+          },
+          {
+            "command": "EVENT_SET_INPUT_SCRIPT",
+            "args": {
+              "input": [
+                "start"
+              ],
+              "override": true,
+              "__scriptTabs": "press",
+              "__collapse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_SWITCH_SCENE",
+                  "args": {
+                    "sceneId": "f1dc3dc3-ca05-408a-9428-0be20ef022b3",
+                    "x": {
+                      "type": "number",
+                      "value": 0
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 0
+                    },
+                    "direction": "",
+                    "fadeSpeed": "2"
+                  },
+                  "id": "9ecbd141-f728-49c4-ba29-ba6d381ed2b6"
+                }
+              ]
+            },
+            "id": "b7dfbc22-e6ee-4a45-9449-6419ca801ac3"
+          },
+          {
+            "command": "EVENT_SET_INPUT_SCRIPT",
+            "args": {
+              "input": [
+                "select"
+              ],
+              "override": true,
+              "__scriptTabs": "press",
+              "__collapse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_SWITCH_SCENE",
+                  "args": {
+                    "sceneId": "7f41883b-8f4c-47dc-a395-39294d6e7985",
+                    "x": {
+                      "type": "number",
+                      "value": 8
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 10
+                    },
+                    "direction": "",
+                    "fadeSpeed": "2"
+                  },
+                  "id": "faf891b5-38d5-49b1-8ebf-55f7c01b2865"
+                }
+              ]
+            },
+            "id": "f3c2aafa-ed53-4636-9645-0a63476e048d"
+          }
+        ]
+      },
+      "id": "647f278d-a8bd-4d55-9070-8575c69b2a0f"
+    }
+  ]
+}

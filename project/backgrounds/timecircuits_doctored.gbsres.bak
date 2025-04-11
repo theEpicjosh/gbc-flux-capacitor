@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "53bd75f4-b843-49b6-8752-4fda4229420a",
+  "name": "timecircuits_doctored",
+  "symbol": "bg_timecircuits_doctored",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "timecircuits_doctored.png",
+  "tileColors": "0315+003+03!002+03!004+03!002+03!002+032b+013+03!012+03!014+04!012+04!012+032b+023+03!022+03!024+05!022+05!022+0316+06b4+"
+}

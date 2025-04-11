@@ -1,0 +1,29 @@
+{
+  "_resourceType": "scene",
+  "id": "432ecace-6e03-412b-9fd7-aec3711c76bc",
+  "_index": 4,
+  "type": "TOPDOWN",
+  "name": "Flux Capacitor Steam Train",
+  "symbol": "scene_5",
+  "x": 752,
+  "y": 368,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "1ea3e99f-b6af-40b9-b369-9590edee519c",
+  "tilesetId": "",
+  "paletteIds": [],
+  "spritePaletteIds": [
+    "",
+    "",
+    "",
+    "49067f98-9d5d-4866-8459-077be0d8954f"
+  ],
+  "autoFadeSpeed": 2,
+  "autoFadeEventCollapse": true,
+  "playerSpriteSheetId": "961c730e-4ad6-462b-99f1-ef07aefc7b9b",
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "00135+0f2+0011+0f!002+0f!0011+0f2+009+"
+}

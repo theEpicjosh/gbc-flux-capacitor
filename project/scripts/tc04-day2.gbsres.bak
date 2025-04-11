@@ -1,0 +1,81 @@
+{
+  "_resourceType": "script",
+  "id": "a2cb403d-c7b3-4fdd-a879-56e41462013c",
+  "name": "TC04-Day2",
+  "description": "",
+  "variables": {
+    "V0": {
+      "id": "V0",
+      "name": "CurrentDigit",
+      "passByReference": true
+    }
+  },
+  "actors": {},
+  "symbol": "script_5",
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "3",
+        "value": {
+          "type": "variable",
+          "value": "V0"
+        },
+        "__collapse": false
+      },
+      "id": "d8684cd1-de22-4e46-8928-a713bd96a130"
+    },
+    {
+      "command": "EVENT_REPLACE_TILE_XY",
+      "args": {
+        "x": {
+          "type": "number",
+          "value": 5
+        },
+        "y": {
+          "type": "number",
+          "value": 1
+        },
+        "tilesetId": "d1e82a77-195e-47e4-942f-4882a6e99549",
+        "tileIndex": {
+          "type": "variable",
+          "value": "2"
+        },
+        "__collapse": false
+      },
+      "id": "50588c13-cad0-4c3e-8fe2-670af732a86f"
+    },
+    {
+      "command": "EVENT_REPLACE_TILE_XY",
+      "args": {
+        "x": {
+          "type": "number",
+          "value": 6
+        },
+        "y": {
+          "type": "number",
+          "value": 1
+        },
+        "tilesetId": "d1e82a77-195e-47e4-942f-4882a6e99549",
+        "tileIndex": {
+          "type": "variable",
+          "value": "3"
+        },
+        "__collapse": false
+      },
+      "id": "8327bc86-f358-4785-948a-28090440a74c"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "12",
+        "value": {
+          "type": "number",
+          "value": 4
+        },
+        "__collapse": false
+      },
+      "id": "ae772271-dc53-4dc0-b629-7760da331b7e"
+    }
+  ]
+}

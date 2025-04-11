@@ -1,0 +1,81 @@
+{
+  "_resourceType": "script",
+  "id": "3e5c214c-ae0f-4996-b40c-cd046d1a172c",
+  "name": "TC12-Minute2",
+  "description": "",
+  "variables": {
+    "V0": {
+      "id": "V0",
+      "name": "CurrentDigit",
+      "passByReference": true
+    }
+  },
+  "actors": {},
+  "symbol": "script_13",
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "11",
+        "value": {
+          "type": "variable",
+          "value": "V0"
+        },
+        "__collapse": false
+      },
+      "id": "f5bafe72-ed36-4212-835f-b81107bbe60d"
+    },
+    {
+      "command": "EVENT_REPLACE_TILE_XY",
+      "args": {
+        "x": {
+          "type": "number",
+          "value": 16
+        },
+        "y": {
+          "type": "number",
+          "value": 1
+        },
+        "tilesetId": "d1e82a77-195e-47e4-942f-4882a6e99549",
+        "tileIndex": {
+          "type": "variable",
+          "value": "10"
+        },
+        "__collapse": false
+      },
+      "id": "ec4c81d0-ee5b-4d5c-be48-432ba3fdb607"
+    },
+    {
+      "command": "EVENT_REPLACE_TILE_XY",
+      "args": {
+        "x": {
+          "type": "number",
+          "value": 17
+        },
+        "y": {
+          "type": "number",
+          "value": 1
+        },
+        "tilesetId": "d1e82a77-195e-47e4-942f-4882a6e99549",
+        "tileIndex": {
+          "type": "variable",
+          "value": "11"
+        },
+        "__collapse": false
+      },
+      "id": "3c0baf56-0f1a-418f-bb2c-f7280c6b69ba"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "12",
+        "value": {
+          "type": "number",
+          "value": 12
+        },
+        "__collapse": false
+      },
+      "id": "c1af9325-4cd4-4d42-a6e3-5fc2f828aace"
+    }
+  ]
+}

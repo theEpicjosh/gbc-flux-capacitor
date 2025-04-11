@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "f6e3a3e8-8414-476b-9533-829cf68f86bc",
+  "name": "timecircuits_monochrome",
+  "symbol": "bg_timecircuits_monochrome",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "timecircuits_monochrome.png",
+  "autoColor": false,
+  "tileColors": "0315+003+03!002+03!004+03!002+03!002+032b+013+03!012+03!014+04!012+04!012+032b+023+03!022+03!024+05!022+05!022+031b+069+03b+069+03b+069+03b+069+03b+069+03b+069+03b+069+03b+069+03b+069+036+"
+}
