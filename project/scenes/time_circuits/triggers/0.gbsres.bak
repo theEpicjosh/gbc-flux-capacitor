@@ -256,7 +256,8 @@
                       "type": "variable",
                       "value": "L0"
                     },
-                    "__collapse": true
+                    "__collapse": false,
+                    "$actor[0]$": "5c9de3be-89fc-4d01-8de2-553007ac246a"
                   },
                   "id": "38a2b631-36f6-4afc-982c-b6ed2a9cb486"
                 }

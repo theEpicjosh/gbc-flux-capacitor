@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "66864790-c7ad-42e1-b943-25c75de53fc9",
+  "name": "fluxcapacitor3",
+  "symbol": "bg_fluxcapacitor3",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "fluxcapacitor3.png",
+  "autoColor": true,
+  "tileColors": "00168+"
+}

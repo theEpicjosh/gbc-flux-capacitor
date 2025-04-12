@@ -4,9 +4,9 @@
   "name": "Default BG 1",
   "colors": [
     "F80000",
-    "F80000",
-    "F80000",
-    "F80000"
+    "500000",
+    "500000",
+    "000000"
   ],
   "defaultName": "Default BG 1",
   "defaultColors": [

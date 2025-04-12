@@ -1,6 +1,6 @@
 {
   "_resourceType": "actor",
-  "id": "6f140dbf-1b84-43dd-a27f-5b4430cfabf5",
+  "id": "551582a0-4015-44ec-b42d-e09ae4195386",
   "name": "Plutonium Gauge",
   "frame": 0,
   "animate": false,
@@ -14,7 +14,7 @@
   "persistent": false,
   "collisionGroup": "",
   "prefabScriptOverrides": {},
-  "symbol": "actor_13",
+  "symbol": "actor_1",
   "script": [],
   "startScript": [
     {
@@ -24,7 +24,7 @@
         "spriteStateId": "",
         "loopAnim": false
       },
-      "id": "8aa7715c-de04-4643-8465-1bf0a1174654"
+      "id": "cda5322a-878e-4486-af8c-639286ca9886"
     }
   ],
   "updateScript": [],

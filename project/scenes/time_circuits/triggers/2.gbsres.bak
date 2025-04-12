@@ -247,7 +247,8 @@
                     "$variable[V0]$": {
                       "type": "variable",
                       "value": "L0"
-                    }
+                    },
+                    "$actor[0]$": "5c9de3be-89fc-4d01-8de2-553007ac246a"
                   },
                   "id": "74d3a129-f952-4d4a-9ade-73e9793d544b"
                 }

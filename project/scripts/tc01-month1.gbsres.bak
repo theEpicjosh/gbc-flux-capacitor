@@ -55,24 +55,15 @@
         ],
         "false": [
           {
-            "command": "EVENT_GROUP",
-            "args": {},
-            "children": {
-              "true": [
-                {
-                  "command": "EVENT_SET_VALUE",
-                  "args": {
-                    "variable": "8",
-                    "value": {
-                      "type": "number",
-                      "value": 0
-                    }
-                  },
-                  "id": "2d8498cc-6eba-4b37-9d6c-9c694b007ded"
-                }
-              ]
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "11",
+              "value": {
+                "type": "number",
+                "value": 0
+              }
             },
-            "id": "71fab3a7-1797-4c2f-b8a5-fec49711a298"
+            "id": "2d8498cc-6eba-4b37-9d6c-9c694b007ded"
           },
           {
             "command": "EVENT_REPLACE_TILE_XY",

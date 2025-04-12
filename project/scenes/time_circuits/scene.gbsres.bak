@@ -86,7 +86,7 @@
                 },
                 "valueB": {
                   "type": "number",
-                  "value": 1
+                  "value": 4
                 }
               },
               "__collapseElse": false
@@ -124,7 +124,7 @@
                       },
                       "valueB": {
                         "type": "number",
-                        "value": 2
+                        "value": 5
                       }
                     },
                     "__collapseElse": false
@@ -162,7 +162,7 @@
                             },
                             "valueB": {
                               "type": "number",
-                              "value": 1
+                              "value": 6
                             }
                           },
                           "__collapseElse": false,
@@ -176,11 +176,11 @@
                                 "sceneId": "432ecace-6e03-412b-9fd7-aec3711c76bc",
                                 "x": {
                                   "type": "number",
-                                  "value": 9
+                                  "value": 15
                                 },
                                 "y": {
                                   "type": "number",
-                                  "value": 16
+                                  "value": 17
                                 },
                                 "direction": "up",
                                 "fadeSpeed": 1,

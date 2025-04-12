@@ -269,6 +269,14 @@
                     ]
                   },
                   "id": "686c273c-d251-4984-996f-5719ea3e7eb3"
+                },
+                {
+                  "command": "EVENT_COMMENT",
+                  "args": {
+                    "text": "[ Attach Back Animation Here ]",
+                    "__collapse": true
+                  },
+                  "id": "2f9821b6-ea48-4257-902b-1ed21dd6fc89"
                 }
               ]
             },

@@ -26,6 +26,34 @@
       "id": "bdbb617e-d086-4a4b-a112-25d37cc77bca"
     },
     {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "gt",
+          "valueA": {
+            "type": "variable",
+            "value": "10"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 24
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_STOP",
+            "args": {},
+            "id": "1ac902af-d7cd-43b6-bc81-c8c37a8a6443"
+          }
+        ],
+        "false": []
+      },
+      "id": "7d726f7d-c9ff-4c2e-bc94-142da35a79db"
+    },
+    {
       "command": "EVENT_REPLACE_TILE_XY",
       "args": {
         "x": {

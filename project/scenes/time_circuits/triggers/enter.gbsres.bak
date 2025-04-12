@@ -688,6 +688,19 @@
                   "id": "b9c12511-0ef8-4164-875a-ac4cdf7e81ab"
                 },
                 {
+                  "command": "EVENT_SAVE_DATA",
+                  "args": {
+                    "saveSlot": 0,
+                    "__scriptTabs": "save",
+                    "__collapse": true
+                  },
+                  "children": {
+                    "true": [],
+                    "load": []
+                  },
+                  "id": "2c7d82c4-63b7-4213-bb6f-4aab50f44922"
+                },
+                {
                   "command": "EVENT_GROUP",
                   "args": {
                     "__label": "Destination Reset",

@@ -39,7 +39,8 @@
             "value": 22
           }
         },
-        "__collapseElse": false
+        "__collapseElse": false,
+        "__disableElse": true
       },
       "children": {
         "true": [

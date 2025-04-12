@@ -26,6 +26,57 @@
       "id": "5af5c3ab-d0e9-4a93-9326-39cc8a90e2e4"
     },
     {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "8"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 21
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "gt",
+                "valueA": {
+                  "type": "variable",
+                  "value": "9"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 22
+                }
+              },
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_STOP",
+                  "args": {},
+                  "id": "9fd25720-d395-4e74-acd1-96feac605fc1"
+                }
+              ],
+              "false": []
+            },
+            "id": "634c9f79-e475-4398-9985-a1f4bd580e23"
+          }
+        ],
+        "false": []
+      },
+      "id": "8c4b7653-c1f4-4f75-8466-16564a96e8f9"
+    },
+    {
       "command": "EVENT_REPLACE_TILE_XY",
       "args": {
         "x": {

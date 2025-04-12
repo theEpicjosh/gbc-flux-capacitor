@@ -10,7 +10,12 @@
       "passByReference": true
     }
   },
-  "actors": {},
+  "actors": {
+    "0": {
+      "id": "0",
+      "name": "A/PM Actor"
+    }
+  },
   "symbol": "script_0",
   "script": [
     {
@@ -39,7 +44,8 @@
               "$variable[V0]$": {
                 "type": "variable",
                 "value": "V0"
-              }
+              },
+              "$actor[0]$": "0"
             },
             "id": "9dbe8461-90af-4e90-8a14-a4103950ad22"
           }

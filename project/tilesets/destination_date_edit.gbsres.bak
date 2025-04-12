@@ -3,9 +3,9 @@
   "id": "d1e82a77-195e-47e4-942f-4882a6e99549",
   "name": "destination_date_edit",
   "symbol": "tileset_destination_date_ed",
-  "width": 5,
+  "width": 6,
   "height": 6,
-  "imageWidth": 47,
+  "imageWidth": 48,
   "imageHeight": 48,
   "filename": "destination_date_edit.png"
 }

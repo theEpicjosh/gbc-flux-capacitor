@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "3f012ad0-f54a-4656-8ad2-d6934a1a92d2",
+  "name": "fluxcapacitor3_doctered",
+  "symbol": "bg_fluxcapacitor3_doctered",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "fluxcapacitor3_doctered.png",
+  "autoColor": false,
+  "tileColors": "002d+042+016+042+00a+042+03!014+03!042+00a+05!033+012+033+05!00a+05!01!036+01!05!00a+05!012+034+012+05!00a+012+036+012+00a+014+032+014+00a+014+032+012+00!01!00a+014+042+012+077+007+01!043+00!05!077+007+044+05!01!067+002+034+006+068+002+034+006+068+00c+068+00!026+005+068+00c+068+"
+}

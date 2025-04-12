@@ -235,7 +235,7 @@
                   "command": "EVENT_GROUP",
                   "args": {
                     "__label": "Reset Destination",
-                    "__collapse": true
+                    "__collapse": false
                   },
                   "children": {
                     "true": [
@@ -427,6 +427,18 @@
                           "__comment": false
                         },
                         "id": "f0beed63-9104-4a83-bbfa-cc26ef680cd1"
+                      },
+                      {
+                        "command": "EVENT_ACTOR_SET_FRAME",
+                        "args": {
+                          "actorId": "5c9de3be-89fc-4d01-8de2-553007ac246a",
+                          "frame": {
+                            "type": "number",
+                            "value": 2
+                          },
+                          "__collapse": true
+                        },
+                        "id": "f8b51d9d-8110-40a8-b593-96fc3fc85010"
                       },
                       {
                         "command": "EVENT_REPLACE_TILE_XY",

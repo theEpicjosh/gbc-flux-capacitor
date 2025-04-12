@@ -217,7 +217,8 @@
                 {
                   "command": "EVENT_GROUP",
                   "args": {
-                    "__label": "Dial Tone"
+                    "__label": "Dial Tone",
+                    "__collapse": true
                   },
                   "children": {
                     "true": [
@@ -252,7 +253,8 @@
                     "$variable[V0]$": {
                       "type": "variable",
                       "value": "L0"
-                    }
+                    },
+                    "$actor[0]$": "5c9de3be-89fc-4d01-8de2-553007ac246a"
                   },
                   "id": "81e627e1-325a-40c7-8343-e13212ae04f2"
                 }

@@ -94,7 +94,7 @@
                 }
               },
               "__collapseElse": true,
-              "__collapse": true
+              "__collapse": false
             },
             "children": {
               "true": [
@@ -120,15 +120,15 @@
                     "sceneId": "f1dc3dc3-ca05-408a-9428-0be20ef022b3",
                     "x": {
                       "type": "number",
-                      "value": 0
+                      "value": 1
                     },
                     "y": {
                       "type": "number",
-                      "value": 0
+                      "value": 8
                     },
                     "direction": "",
                     "fadeSpeed": "2",
-                    "__collapse": true
+                    "__collapse": false
                   },
                   "id": "01a88d1f-7b51-49c6-81b8-a1e4dee0fbd4"
                 }
@@ -401,7 +401,7 @@
         ],
         "override": true,
         "__scriptTabs": "press",
-        "__collapse": false
+        "__collapse": true
       },
       "children": {
         "true": [
