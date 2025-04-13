@@ -101,6 +101,23 @@
       "id": "2c7527f1-9995-4122-9c4e-386b88f8303e"
     },
     {
+      "command": "EVENT_ACTOR_SHOW",
+      "args": {
+        "actorId": "$self$",
+        "__collapse": false
+      },
+      "id": "9879b095-eb54-4a21-a3de-d505214047bf"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "$self$",
+        "spriteStateId": "",
+        "loopAnim": false
+      },
+      "id": "ed2d192e-956c-402f-aa18-809c5495d6cd"
+    },
+    {
       "command": "EVENT_ACTOR_SET_FRAME",
       "args": {
         "actorId": "$self$",
@@ -108,7 +125,7 @@
           "type": "number",
           "value": 1
         },
-        "__collapse": true
+        "__collapse": false
       },
       "id": "151e32d1-73ba-42f1-a956-6e757f3da3a8"
     },

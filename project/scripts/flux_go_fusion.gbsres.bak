@@ -420,9 +420,21 @@
       "command": "EVENT_ACTOR_SHOW",
       "args": {
         "actorId": "$self$",
-        "__collapse": true
+        "__collapse": false,
+        "__comment": true
       },
       "id": "71a9312f-e985-4d7e-a6fc-6afbe1221618"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_FRAME",
+      "args": {
+        "actorId": "$self$",
+        "frame": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "bd0f6e1a-bfef-4f9c-9183-60f8df238560"
     },
     {
       "command": "EVENT_MUSIC_PLAY",

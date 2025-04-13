@@ -123,11 +123,11 @@
                     "sceneId": "f1dc3dc3-ca05-408a-9428-0be20ef022b3",
                     "x": {
                       "type": "number",
-                      "value": 0
+                      "value": 1
                     },
                     "y": {
                       "type": "number",
-                      "value": 0
+                      "value": 8
                     },
                     "direction": "",
                     "fadeSpeed": "2",
@@ -152,7 +152,7 @@
         ],
         "override": true,
         "__scriptTabs": "press",
-        "__collapse": true
+        "__collapse": false
       },
       "children": {
         "true": [
@@ -406,7 +406,7 @@
         ],
         "override": true,
         "__scriptTabs": "press",
-        "__collapse": false
+        "__collapse": true
       },
       "children": {
         "true": [
