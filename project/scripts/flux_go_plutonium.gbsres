@@ -135,6 +135,13 @@
       "id": "2e4aa912-49ff-4c0f-b082-6a58524683ec"
     },
     {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "803f9e73-b1eb-4c6d-b54d-ed42d2066855"
+      },
+      "id": "b2ec6f56-1f1e-4b4b-856c-cd6f0a6edb81"
+    },
+    {
       "command": "EVENT_ACTOR_HIDE",
       "args": {
         "actorId": "0"

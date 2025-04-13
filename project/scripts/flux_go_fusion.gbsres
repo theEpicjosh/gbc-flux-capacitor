@@ -246,6 +246,13 @@
       "id": "52471c11-17f1-40d2-911f-6814b4e429aa"
     },
     {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "803f9e73-b1eb-4c6d-b54d-ed42d2066855"
+      },
+      "id": "f8274776-7f7c-4963-b0a9-a768491085af"
+    },
+    {
       "command": "EVENT_ACTOR_HIDE",
       "args": {
         "actorId": "0"

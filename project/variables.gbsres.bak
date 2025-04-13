@@ -39,7 +39,7 @@
     {
       "id": "7",
       "name": "TCD08-Year4",
-      "symbol": "var_tcd08_year4"
+      "symbol": "var_tcd08_year4_0"
     },
     {
       "id": "8",
@@ -198,6 +198,146 @@
       "id": "432ecace-6e03-412b-9fd7-aec3711c76bc__L0",
       "name": "Local 0",
       "symbol": "var_local_5"
+    },
+    {
+      "id": "22",
+      "name": "TCPMonth-01",
+      "symbol": "var_tcpmonth_01"
+    },
+    {
+      "id": "23",
+      "name": "TCPMonth-02",
+      "symbol": "var_tcpmonth_02"
+    },
+    {
+      "id": "24",
+      "name": "TCPMonth-03",
+      "symbol": "var_tcpmonth_03"
+    },
+    {
+      "id": "25",
+      "name": "TCPDay-01",
+      "symbol": "var_tcpday_01"
+    },
+    {
+      "id": "26",
+      "name": "TCPDay-02",
+      "symbol": "var_tcpday_02"
+    },
+    {
+      "id": "27",
+      "name": "TCPYear-01",
+      "symbol": "var_tcpyear_01"
+    },
+    {
+      "id": "28",
+      "name": "TCPYear-02",
+      "symbol": "var_tcpyear_02"
+    },
+    {
+      "id": "29",
+      "name": "TCPYear-03",
+      "symbol": "var_tcpyear_03"
+    },
+    {
+      "id": "30",
+      "name": "TCPYear-04",
+      "symbol": "var_tcpyear_04"
+    },
+    {
+      "id": "32",
+      "name": "TCPHourPM",
+      "symbol": "var_tcphourpm"
+    },
+    {
+      "id": "33",
+      "name": "TCPHour-01",
+      "symbol": "var_tcphour_01"
+    },
+    {
+      "id": "34",
+      "name": "TCPHour-02",
+      "symbol": "var_tcphour_02"
+    },
+    {
+      "id": "35",
+      "name": "TCPMinute-01",
+      "symbol": "var_tcpminute_01"
+    },
+    {
+      "id": "36",
+      "name": "TCPMinute-02",
+      "symbol": "var_tcpminute_02"
+    },
+    {
+      "id": "37",
+      "name": "TCLMonth-01",
+      "symbol": "var_tclmonth_01"
+    },
+    {
+      "id": "38",
+      "name": "TCLMonth-02",
+      "symbol": "var_tclmonth_02"
+    },
+    {
+      "id": "39",
+      "name": "TCLMonth-03",
+      "symbol": "var_tclmonth_03"
+    },
+    {
+      "id": "40",
+      "name": "TCLDay-01",
+      "symbol": "var_tclday_01"
+    },
+    {
+      "id": "41",
+      "name": "TCLDay-02",
+      "symbol": "var_tclday_02"
+    },
+    {
+      "id": "42",
+      "name": "TCLYear-01",
+      "symbol": "var_tclyear_01"
+    },
+    {
+      "id": "43",
+      "name": "TCLYear-02",
+      "symbol": "var_tclyear_02"
+    },
+    {
+      "id": "44",
+      "name": "TCLYear-03",
+      "symbol": "var_tclyear_03"
+    },
+    {
+      "id": "45",
+      "name": "TCLYear-04",
+      "symbol": "var_tclyear_04"
+    },
+    {
+      "id": "46",
+      "name": "TCLHourPM",
+      "symbol": "var_tclhourpm"
+    },
+    {
+      "id": "47",
+      "name": "TCLHour-01",
+      "symbol": "var_tclhour_01"
+    },
+    {
+      "id": "48",
+      "name": "TCLHour-02",
+      "symbol": "var_tclhour_02"
+    },
+    {
+      "id": "49",
+      "name": "TCLMin-01",
+      "symbol": "var_tclmin_01"
+    },
+    {
+      "id": "50",
+      "name": "TCLMin-02",
+      "symbol": "var_tclmin_02"
     }
   ]
 }

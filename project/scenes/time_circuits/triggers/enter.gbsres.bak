@@ -704,7 +704,7 @@
                   "command": "EVENT_GROUP",
                   "args": {
                     "__label": "Destination Reset",
-                    "__collapse": true
+                    "__collapse": false
                   },
                   "children": {
                     "true": [

@@ -182,8 +182,8 @@
       "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
       "args": {
         "actorId": "$self$",
-        "speed": 127,
-        "__collapse": true
+        "speed": 255,
+        "__collapse": false
       },
       "id": "6b9fed83-732b-4a1b-8cce-7afb71fc94e2"
     },

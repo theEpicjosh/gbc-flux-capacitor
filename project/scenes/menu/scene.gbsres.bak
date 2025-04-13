@@ -109,6 +109,15 @@
       "id": "9879b095-eb54-4a21-a3de-d505214047bf"
     },
     {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "$self$",
+        "spriteStateId": "",
+        "loopAnim": false
+      },
+      "id": "ed2d192e-956c-402f-aa18-809c5495d6cd"
+    },
+    {
       "command": "EVENT_ACTOR_SET_FRAME",
       "args": {
         "actorId": "$self$",

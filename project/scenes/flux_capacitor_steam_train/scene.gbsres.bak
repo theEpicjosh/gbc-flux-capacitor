@@ -56,7 +56,7 @@
         ],
         "override": true,
         "__scriptTabs": "press",
-        "__collapse": false
+        "__collapse": true
       },
       "children": {
         "true": [
@@ -74,7 +74,7 @@
                 }
               },
               "__collapseElse": true,
-              "__collapse": false
+              "__collapse": true
             },
             "children": {
               "true": [
@@ -129,7 +129,7 @@
         ],
         "override": true,
         "__scriptTabs": "press",
-        "__collapse": false
+        "__collapse": true
       },
       "children": {
         "true": [
@@ -195,7 +195,7 @@
         ],
         "override": true,
         "__scriptTabs": "press",
-        "__collapse": true
+        "__collapse": false
       },
       "children": {
         "true": [
@@ -205,7 +205,8 @@
               "customEventId": "d29ca7a1-af56-4162-a549-fd57619c37cf",
               "$actor[0]$": "ecbe2def-df2d-4010-a0fe-e42f08e69809",
               "$actor[1]$": "6ae88740-89aa-4e2d-afc5-33d93ae6a422",
-              "$actor[2]$": "16bc6c64-16ed-4cfc-b01a-4f74df697db7"
+              "$actor[2]$": "16bc6c64-16ed-4cfc-b01a-4f74df697db7",
+              "$actor[3]$": "4e787ff0-d779-4b93-a84b-4a7c68be93e3"
             },
             "id": "ff62714f-cf69-4051-8342-0a341acde59b"
           }
