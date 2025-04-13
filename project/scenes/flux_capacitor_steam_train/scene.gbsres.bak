@@ -9,12 +9,12 @@
   "y": 368,
   "width": 20,
   "height": 18,
-  "backgroundId": "66864790-c7ad-42e1-b943-25c75de53fc9",
+  "backgroundId": "3f012ad0-f54a-4656-8ad2-d6934a1a92d2",
   "tilesetId": "",
   "paletteIds": [
-    "",
-    "7bb7f3d8-1202-4fef-9c0b-aa55ef46216c",
-    "",
+    "876899f9-5274-45e0-beb5-203ebedeb546",
+    "dmg",
+    "a26ca1b3-87a4-405c-bf49-04c402fd6efa",
     "b112b77d-a934-4376-ac8a-ace97b03ae4d",
     "cfbb3452-06c5-4d5f-9e2b-236e677f1cfc",
     "321fc52a-060d-41ed-9555-0ee1a0ebdf23",
@@ -165,7 +165,7 @@
                     },
                     "direction": "",
                     "fadeSpeed": 1,
-                    "__collapse": false
+                    "__collapse": true
                   },
                   "id": "aa377831-e417-4a36-bec6-11e8d0dc32c2"
                 }
@@ -182,23 +182,10 @@
       "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
       "args": {
         "actorId": "$self$",
-        "speed": 127
+        "speed": 127,
+        "__collapse": true
       },
       "id": "6b9fed83-732b-4a1b-8cce-7afb71fc94e2"
-    },
-    {
-      "command": "EVENT_PALETTE_SET_BACKGROUND",
-      "args": {
-        "palette0": "dmg",
-        "palette1": "dmg",
-        "palette2": "dmg",
-        "palette3": "dmg",
-        "palette4": "dmg",
-        "palette5": "dmg",
-        "palette6": "restore",
-        "palette7": "restore"
-      },
-      "id": "e91147ec-44d3-43cd-99a9-e04a29a3c407"
     }
   ],
   "playerHit1Script": [],
