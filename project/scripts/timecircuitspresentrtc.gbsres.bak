@@ -399,6 +399,14 @@
             "id": "8e05be2b-e61d-4bfb-9222-14f8983d2486"
           },
           {
+            "command": "EVENT_COMMENT",
+            "args": {
+              "text": "If a minute is reached, according to the $51$ Script,",
+              "__collapse": true
+            },
+            "id": "1d93e8e9-ed79-47fc-abf4-9a1035381a4d"
+          },
+          {
             "command": "EVENT_IF",
             "args": {
               "condition": {
@@ -419,6 +427,23 @@
             "children": {
               "true": [
                 {
+                  "command": "EVENT_COMMENT",
+                  "args": {
+                    "text": "If Minute-02 reaches \"9\"",
+                    "__collapse": true,
+                    "__label": "If Minute-02 does not reach \"9\""
+                  },
+                  "id": "dcf0bf88-7823-4737-ae04-5154121c0c9f"
+                },
+                {
+                  "command": "EVENT_COMMENT",
+                  "args": {
+                    "text": "Minute-01 is \"0\"",
+                    "__collapse": true
+                  },
+                  "id": "33efd316-cd61-4aae-b92a-54bd25f62273"
+                },
+                {
                   "command": "EVENT_IF",
                   "args": {
                     "condition": {
@@ -438,6 +463,14 @@
                   "children": {
                     "true": [
                       {
+                        "command": "EVENT_COMMENT",
+                        "args": {
+                          "text": "Increment Minute-02 by 1",
+                          "__collapse": true
+                        },
+                        "id": "2da6a486-078a-4757-bae6-07fdbaa00cad"
+                      },
+                      {
                         "command": "EVENT_INC_VALUE",
                         "args": {
                           "variable": "36",
@@ -448,6 +481,14 @@
                     ],
                     "false": [
                       {
+                        "command": "EVENT_COMMENT",
+                        "args": {
+                          "text": "Minute-02 is \"0\"",
+                          "__collapse": true
+                        },
+                        "id": "68f164fc-e455-45fa-acb8-743fd03558cf"
+                      },
+                      {
                         "command": "EVENT_SET_VALUE",
                         "args": {
                           "variable": "36",
@@ -457,6 +498,15 @@
                           }
                         },
                         "id": "d608acab-c25e-41c4-9794-6b224b855111"
+                      },
+                      {
+                        "command": "EVENT_COMMENT",
+                        "args": {
+                          "text": "If Minute-01 reaches \"5\"",
+                          "__collapse": true,
+                          "__label": "If Minute-01 has not reached \"5\""
+                        },
+                        "id": "2713942f-0393-4913-92b3-f86477fe302a"
                       },
                       {
                         "command": "EVENT_IF",
@@ -480,6 +530,14 @@
                         "children": {
                           "true": [
                             {
+                              "command": "EVENT_COMMENT",
+                              "args": {
+                                "text": "Increment Minute-01 by 1",
+                                "__collapse": true
+                              },
+                              "id": "3ee75725-3749-43eb-826f-aabefa0c7279"
+                            },
+                            {
                               "command": "EVENT_INC_VALUE",
                               "args": {
                                 "variable": "35"
@@ -488,6 +546,14 @@
                             }
                           ],
                           "false": [
+                            {
+                              "command": "EVENT_COMMENT",
+                              "args": {
+                                "text": "Minute-01 is \"0\"",
+                                "__collapse": true
+                              },
+                              "id": "ac2bdcc3-0b4f-4af3-bdde-533f8738f533"
+                            },
                             {
                               "command": "EVENT_SET_VALUE",
                               "args": {
@@ -501,10 +567,34 @@
                               "id": "de70deaf-7298-4026-9e1e-45df790c1801"
                             },
                             {
+                              "command": "EVENT_COMMENT",
+                              "args": {
+                                "text": "Increment Hour-02 by 1",
+                                "__collapse": true
+                              },
+                              "id": "0e8fd46e-1ce7-4c9f-bca7-d15effeb6185"
+                            },
+                            {
+                              "command": "EVENT_INC_VALUE",
+                              "args": {
+                                "variable": "34"
+                              },
+                              "id": "eb7283d3-03e9-4693-be23-dd8dd3b0468e"
+                            },
+                            {
+                              "command": "EVENT_COMMENT",
+                              "args": {
+                                "text": "If Hour-02 reaches \"2\"",
+                                "__collapse": true,
+                                "__label": "If Hour-02 does not reach \"2\""
+                              },
+                              "id": "cc4eb612-8149-4249-a031-c6e321b60a4a"
+                            },
+                            {
                               "command": "EVENT_IF",
                               "args": {
                                 "condition": {
-                                  "type": "gt",
+                                  "type": "lt",
                                   "valueA": {
                                     "type": "variable",
                                     "value": "34"
@@ -514,10 +604,36 @@
                                     "value": 21
                                   }
                                 },
-                                "__collapseElse": true
+                                "__collapseElse": false
                               },
                               "children": {
                                 "true": [
+                                  {
+                                    "command": "EVENT_COMMENT",
+                                    "args": {
+                                      "text": "Keep incrementing Hour-02 by 1",
+                                      "__collapse": true
+                                    },
+                                    "id": "cdab4719-61f4-4d3c-b4e9-a21d7b5e8881"
+                                  },
+                                  {
+                                    "command": "EVENT_INC_VALUE",
+                                    "args": {
+                                      "variable": "34",
+                                      "__collapse": true
+                                    },
+                                    "id": "dfa7baac-a5be-4ee1-a8d2-723486c26518"
+                                  }
+                                ],
+                                "false": [
+                                  {
+                                    "command": "EVENT_COMMENT",
+                                    "args": {
+                                      "text": "If Hour-01 is \"1\"",
+                                      "__collapse": true
+                                    },
+                                    "id": "7c83a7e5-01c1-421c-9378-ae19d70e38fa"
+                                  },
                                   {
                                     "command": "EVENT_IF",
                                     "args": {
@@ -538,6 +654,15 @@
                                     "children": {
                                       "true": [
                                         {
+                                          "command": "EVENT_COMMENT",
+                                          "args": {
+                                            "text": "Check if Indicator is not PM",
+                                            "__collapse": true,
+                                            "__label": "Check if Indicator is AM"
+                                          },
+                                          "id": "e4904965-9438-46a2-92bf-5dc275c7cdd9"
+                                        },
+                                        {
                                           "command": "EVENT_IF",
                                           "args": {
                                             "condition": {
@@ -550,105 +675,255 @@
                                                 "type": "false"
                                               }
                                             },
-                                            "__collapseElse": false,
+                                            "__collapseElse": true,
                                             "__collapse": false
                                           },
                                           "children": {
                                             "true": [
+                                              {
+                                                "command": "EVENT_COMMENT",
+                                                "args": {
+                                                  "text": "Switch to PM",
+                                                  "__collapse": true
+                                                },
+                                                "id": "ddc013c7-8e49-40b2-ba7a-c688fc44f1c3"
+                                              },
                                               {
                                                 "command": "EVENT_SET_VALUE",
                                                 "args": {
                                                   "variable": "32",
                                                   "value": {
                                                     "type": "true"
-                                                  }
+                                                  },
+                                                  "__collapse": true
                                                 },
-                                                "id": "fd114356-aea2-4c90-9037-009cbf1b63a5"
+                                                "id": "0be28c07-a5f9-412d-9416-f67a12dd7ef3"
+                                              },
+                                              {
+                                                "command": "EVENT_COMMENT",
+                                                "args": {
+                                                  "text": "If Hour-02 has not reached \"3\""
+                                                },
+                                                "id": "91a1d872-dffd-4658-8d3e-01405afa342e"
+                                              },
+                                              {
+                                                "command": "EVENT_IF",
+                                                "args": {
+                                                  "condition": {
+                                                    "type": "lt",
+                                                    "valueA": {
+                                                      "type": "variable",
+                                                      "value": "34"
+                                                    },
+                                                    "valueB": {
+                                                      "type": "number",
+                                                      "value": 22
+                                                    }
+                                                  },
+                                                  "__collapseElse": false
+                                                },
+                                                "children": {
+                                                  "true": [
+                                                    {
+                                                      "command": "EVENT_COMMENT",
+                                                      "args": {
+                                                        "text": "Increment Hour-02 by 1",
+                                                        "__collapse": true
+                                                      },
+                                                      "id": "21c63eba-157e-4d9a-b0da-e5404a7f50f9"
+                                                    },
+                                                    {
+                                                      "command": "EVENT_INC_VALUE",
+                                                      "args": {
+                                                        "variable": "34"
+                                                      },
+                                                      "id": "db9b3cf8-c4f7-4916-92eb-027e7c4f2d4b"
+                                                    }
+                                                  ],
+                                                  "false": [
+                                                    {
+                                                      "command": "EVENT_COMMENT",
+                                                      "args": {
+                                                        "text": "Hour-02 is \"1\"",
+                                                        "__collapse": true
+                                                      },
+                                                      "id": "81225acd-9495-4b80-903c-ab9c01ee1a87"
+                                                    },
+                                                    {
+                                                      "command": "EVENT_SET_VALUE",
+                                                      "args": {
+                                                        "variable": "34",
+                                                        "value": {
+                                                          "type": "number",
+                                                          "value": 20
+                                                        },
+                                                        "__collapse": true
+                                                      },
+                                                      "id": "69987da3-7895-4240-85f8-025e90a34652"
+                                                    },
+                                                    {
+                                                      "command": "EVENT_COMMENT",
+                                                      "args": {
+                                                        "text": "Hour-02 is \"1\"",
+                                                        "__collapse": true,
+                                                        "__label": "Hour-01 is \"0\""
+                                                      },
+                                                      "id": "3959d835-9d9e-48b1-9d18-0e311ae79025"
+                                                    },
+                                                    {
+                                                      "command": "EVENT_SET_VALUE",
+                                                      "args": {
+                                                        "variable": "33",
+                                                        "value": {
+                                                          "type": "number",
+                                                          "value": 19
+                                                        },
+                                                        "__collapse": true
+                                                      },
+                                                      "id": "fb7ecd4b-9a21-4fed-8690-ed52c6b66009"
+                                                    }
+                                                  ]
+                                                },
+                                                "id": "629ac35c-037a-45ba-ae71-4901f834cf76"
                                               }
                                             ],
                                             "false": [
+                                              {
+                                                "command": "EVENT_COMMENT",
+                                                "args": {
+                                                  "text": "Switch to AM \"NEW DAY!!\"",
+                                                  "__collapse": true
+                                                },
+                                                "id": "b7c0dfcb-da3c-480d-83af-7b6337bfe7ed"
+                                              },
                                               {
                                                 "command": "EVENT_SET_VALUE",
                                                 "args": {
                                                   "variable": "32",
                                                   "value": {
                                                     "type": "false"
-                                                  }
+                                                  },
+                                                  "__collapse": true
                                                 },
-                                                "id": "12311cf8-101a-4aa5-bb6e-7141642d637a"
+                                                "id": "617f8798-4fbb-4d18-a431-c9f9ddb9e7b4"
                                               },
                                               {
                                                 "command": "EVENT_COMMENT",
                                                 "args": {
-                                                  "text": "Add DAY Increment Script Here",
+                                                  "text": "Increment Day-02 by 1",
                                                   "__collapse": true
                                                 },
-                                                "id": "6dfff228-5e21-4a9d-9872-b7e297a872a6"
+                                                "id": "73a884ae-a8a0-46a9-9802-c48cb07a3355"
+                                              },
+                                              {
+                                                "command": "EVENT_INC_VALUE",
+                                                "args": {
+                                                  "variable": "26",
+                                                  "__collapse": true
+                                                },
+                                                "id": "4ea9f857-8eb5-42e4-bf0e-dc3c6d2c17d4"
                                               }
                                             ]
                                           },
-                                          "id": "9824af53-e62f-4ab0-800f-8c1b13745121"
-                                        }
-                                      ],
-                                      "false": []
-                                    },
-                                    "id": "522070ea-d69f-43fb-85e9-91152179e40f"
-                                  }
-                                ],
-                                "false": [
-                                  {
-                                    "command": "EVENT_IF",
-                                    "args": {
-                                      "condition": {
-                                        "type": "lt",
-                                        "valueA": {
-                                          "type": "variable",
-                                          "value": "34"
-                                        },
-                                        "valueB": {
-                                          "type": "number",
-                                          "value": 28
-                                        }
-                                      },
-                                      "__collapseElse": true,
-                                      "__collapse": true
-                                    },
-                                    "children": {
-                                      "true": [
-                                        {
-                                          "command": "EVENT_INC_VALUE",
-                                          "args": {
-                                            "variable": "34"
-                                          },
-                                          "id": "074493fe-d197-4313-9145-b016da0f5f8c"
+                                          "id": "a3dadf02-5f1c-470e-bed9-e698312cfc82"
                                         }
                                       ],
                                       "false": [
                                         {
-                                          "command": "EVENT_SET_VALUE",
-                                          "args": {
-                                            "variable": "33",
-                                            "value": {
-                                              "type": "number",
-                                              "value": 20
-                                            }
-                                          },
-                                          "id": "c98b600a-790f-40a0-9edf-0eea51008d14"
-                                        },
-                                        {
-                                          "command": "EVENT_SET_VALUE",
+                                          "command": "EVENT_INC_VALUE",
                                           "args": {
                                             "variable": "34",
-                                            "value": {
-                                              "type": "number",
-                                              "value": 19
-                                            }
+                                            "__collapse": true
                                           },
-                                          "id": "d8f7ce1c-219a-471c-b90c-2e0ede99e768"
+                                          "id": "079eae4c-6ace-4a34-9b52-bf597b447c46"
+                                        },
+                                        {
+                                          "command": "EVENT_COMMENT",
+                                          "args": {
+                                            "text": "And If Hour-01 equals \"1\"",
+                                            "__collapse": true,
+                                            "__label": "And If Hour-02 has not reached \"9\""
+                                          },
+                                          "id": "c7890618-f005-4953-b590-5cde897563c5"
+                                        },
+                                        {
+                                          "command": "EVENT_IF",
+                                          "args": {
+                                            "condition": {
+                                              "type": "lt",
+                                              "valueA": {
+                                                "type": "variable",
+                                                "value": "34"
+                                              },
+                                              "valueB": {
+                                                "type": "number",
+                                                "value": 28
+                                              }
+                                            },
+                                            "__collapseElse": true,
+                                            "__collapse": false
+                                          },
+                                          "children": {
+                                            "true": [
+                                              {
+                                                "command": "EVENT_COMMENT",
+                                                "args": {
+                                                  "text": "Keep incrementing Hour-02 by 1",
+                                                  "__collapse": true
+                                                },
+                                                "id": "e3feb1be-00af-4461-99df-057c89163ef8"
+                                              },
+                                              {
+                                                "command": "EVENT_INC_VALUE",
+                                                "args": {
+                                                  "variable": "34"
+                                                },
+                                                "id": "0e2bd073-0b8b-45eb-b53f-d045eac8bfc5"
+                                              }
+                                            ],
+                                            "false": [
+                                              {
+                                                "command": "EVENT_COMMENT",
+                                                "args": {
+                                                  "text": "Hour-02 is \"0\"",
+                                                  "__collapse": false
+                                                },
+                                                "id": "38cf8c0b-8fc1-4d46-bf53-29e1862beccf"
+                                              },
+                                              {
+                                                "command": "EVENT_SET_VALUE",
+                                                "args": {
+                                                  "variable": "34",
+                                                  "value": {
+                                                    "type": "number",
+                                                    "value": 19
+                                                  }
+                                                },
+                                                "id": "b61e5a5b-ddbd-4a45-a0c5-b53b5cc5e435"
+                                              },
+                                              {
+                                                "command": "EVENT_COMMENT",
+                                                "args": {
+                                                  "text": "Increment Hour-01 by 1",
+                                                  "__collapse": false
+                                                },
+                                                "id": "28b156ba-9970-4e99-a074-8d9fa803a3a4"
+                                              },
+                                              {
+                                                "command": "EVENT_INC_VALUE",
+                                                "args": {
+                                                  "variable": "33",
+                                                  "__collapse": false
+                                                },
+                                                "id": "8028c3d2-3754-4f57-81e1-07f178262e69"
+                                              }
+                                            ]
+                                          },
+                                          "id": "9b165529-d8d9-4464-9a45-401e309bfb44"
                                         }
                                       ]
                                     },
-                                    "id": "6b2727d0-c251-4662-882f-58bd1932878d"
+                                    "id": "6bf9ead8-9782-4435-96b9-625b85d19743"
                                   }
                                 ]
                               },
@@ -667,7 +942,7 @@
                   "args": {
                     "saveSlot": 0,
                     "__scriptTabs": "save",
-                    "__collapse": false,
+                    "__collapse": true,
                     "__comment": false
                   },
                   "children": {
