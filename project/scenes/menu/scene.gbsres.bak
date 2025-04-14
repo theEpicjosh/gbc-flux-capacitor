@@ -26,6 +26,88 @@
   "playerSpriteSheetId": "41701a94-9d00-4dce-938a-6ec4a5452e86",
   "script": [
     {
+      "command": "EVENT_IF_SAVED_DATA",
+      "args": {
+        "saveSlot": 0,
+        "__collapseElse": true,
+        "__collapse": true,
+        "__comment": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "gt",
+                "valueA": {
+                  "type": "variable",
+                  "value": "36"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 18
+                }
+              },
+              "__collapseElse": true,
+              "__disableElse": true,
+              "__collapse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_THREAD_START",
+                  "args": {
+                    "variable": "31",
+                    "__scriptTabs": "true",
+                    "__collapse": false,
+                    "__label": "Clock Thread Start"
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_CALL_CUSTOM_EVENT",
+                        "args": {
+                          "customEventId": "803f9e73-b1eb-4c6d-b54d-ed42d2066855"
+                        },
+                        "id": "6b7400b4-1ef8-47a8-a706-a747fe7fea02"
+                      }
+                    ]
+                  },
+                  "id": "66df169d-7b9b-47b9-96a8-2c6bb350a18f"
+                }
+              ],
+              "false": []
+            },
+            "id": "f8fd95fa-42a4-4d54-a35c-5ddd554735e3"
+          }
+        ],
+        "false": []
+      },
+      "id": "2b08ab75-0a0d-4e2b-9766-c4947db41909"
+    },
+    {
+      "command": "EVENT_THREAD_START",
+      "args": {
+        "variable": "31",
+        "__scriptTabs": "true",
+        "__collapse": false,
+        "__label": "Clock Thread Start"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "803f9e73-b1eb-4c6d-b54d-ed42d2066855"
+            },
+            "id": "529751c9-b941-4c3d-8bb6-c63d11f5f313"
+          }
+        ]
+      },
+      "id": "d3ccb2a0-5455-490b-ae5f-20ecc2905430"
+    },
+    {
       "command": "EVENT_LOAD_DATA",
       "args": {
         "saveSlot": 0,
@@ -101,10 +183,535 @@
       "id": "2c7527f1-9995-4122-9c4e-386b88f8303e"
     },
     {
+      "command": "EVENT_IF_SAVED_DATA",
+      "args": {
+        "saveSlot": 0,
+        "__collapseElse": true,
+        "__collapse": true,
+        "__comment": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_GROUP",
+            "args": {
+              "__label": "Declare Variables from Save",
+              "__collapse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_GROUP",
+                  "args": {
+                    "__label": "Destination Variables",
+                    "__collapse": true
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_PEEK_DATA",
+                        "args": {
+                          "variableDest": "13",
+                          "variableSource": "13",
+                          "saveSlot": 0,
+                          "__collapse": true,
+                          "__label": "Month1"
+                        },
+                        "id": "ae68099e-a420-48bc-a5c0-8b1e53b307a7"
+                      },
+                      {
+                        "command": "EVENT_PEEK_DATA",
+                        "args": {
+                          "variableDest": "14",
+                          "variableSource": "14",
+                          "saveSlot": 0,
+                          "__collapse": true,
+                          "__label": "Month2"
+                        },
+                        "id": "fabdebbd-4d05-44a5-bf5e-250d161f6007"
+                      },
+                      {
+                        "command": "EVENT_PEEK_DATA",
+                        "args": {
+                          "variableDest": "15",
+                          "variableSource": "15",
+                          "saveSlot": 0,
+                          "__collapse": true,
+                          "__label": "Month3"
+                        },
+                        "id": "4457e614-eef9-4422-8032-b6dd73750e63"
+                      },
+                      {
+                        "command": "EVENT_PEEK_DATA",
+                        "args": {
+                          "variableDest": "2",
+                          "variableSource": "2",
+                          "saveSlot": 0,
+                          "__collapse": true,
+                          "__label": "Day1"
+                        },
+                        "id": "e64e56c6-a5aa-41cd-bf15-020cb4bc0de9"
+                      },
+                      {
+                        "command": "EVENT_PEEK_DATA",
+                        "args": {
+                          "variableDest": "3",
+                          "variableSource": "3",
+                          "saveSlot": 0,
+                          "__collapse": true,
+                          "__label": "Day2"
+                        },
+                        "id": "27e87c97-9601-4999-9a09-c9b5593d8b8a"
+                      },
+                      {
+                        "command": "EVENT_PEEK_DATA",
+                        "args": {
+                          "variableDest": "4",
+                          "variableSource": "4",
+                          "saveSlot": 0,
+                          "__collapse": true,
+                          "__label": "Year1"
+                        },
+                        "id": "19f8f238-8302-4ddb-9126-b98d754a0d7b"
+                      },
+                      {
+                        "command": "EVENT_PEEK_DATA",
+                        "args": {
+                          "variableDest": "5",
+                          "variableSource": "5",
+                          "saveSlot": 0,
+                          "__collapse": true,
+                          "__label": "Year2"
+                        },
+                        "id": "dd514327-9ce4-4217-a68e-d3dbe81676e9"
+                      },
+                      {
+                        "command": "EVENT_PEEK_DATA",
+                        "args": {
+                          "variableDest": "6",
+                          "variableSource": "6",
+                          "saveSlot": 0,
+                          "__collapse": true,
+                          "__label": "Year3"
+                        },
+                        "id": "9e2d6072-3fa3-451d-ab0b-23777760004f"
+                      },
+                      {
+                        "command": "EVENT_PEEK_DATA",
+                        "args": {
+                          "variableDest": "7",
+                          "variableSource": "7",
+                          "saveSlot": 0,
+                          "__collapse": true,
+                          "__label": "Year4"
+                        },
+                        "id": "e2f176ff-0530-44eb-a8e2-c4fa4a58c5b3"
+                      },
+                      {
+                        "command": "EVENT_PEEK_DATA",
+                        "args": {
+                          "variableDest": "16",
+                          "variableSource": "16",
+                          "saveSlot": 0,
+                          "__collapse": true,
+                          "__label": "HourPM"
+                        },
+                        "id": "d36fd69c-a40f-4a8a-afd7-4369be940c90"
+                      },
+                      {
+                        "command": "EVENT_PEEK_DATA",
+                        "args": {
+                          "variableDest": "17",
+                          "variableSource": "17",
+                          "saveSlot": 0,
+                          "__collapse": true,
+                          "__label": "Hour1"
+                        },
+                        "id": "269f8766-43d7-44b3-b045-340e37c005b2"
+                      },
+                      {
+                        "command": "EVENT_PEEK_DATA",
+                        "args": {
+                          "variableDest": "18",
+                          "variableSource": "18",
+                          "saveSlot": 0,
+                          "__collapse": true,
+                          "__label": "Hour2"
+                        },
+                        "id": "2f00d158-d55b-4167-abc0-27d10c528af1"
+                      },
+                      {
+                        "command": "EVENT_PEEK_DATA",
+                        "args": {
+                          "variableDest": "10",
+                          "variableSource": "10",
+                          "saveSlot": 0,
+                          "__collapse": true,
+                          "__label": "Minute1"
+                        },
+                        "id": "b49d3815-6749-4e1f-915a-1d12f0a02b55"
+                      },
+                      {
+                        "command": "EVENT_PEEK_DATA",
+                        "args": {
+                          "variableDest": "11",
+                          "variableSource": "11",
+                          "saveSlot": 0,
+                          "__collapse": true,
+                          "__label": "Minute2"
+                        },
+                        "id": "4147f75e-251e-4809-a05c-8eae8b62dfe9"
+                      }
+                    ]
+                  },
+                  "id": "758673aa-145a-4049-a830-2eb51bbafd80"
+                },
+                {
+                  "command": "EVENT_GROUP",
+                  "args": {
+                    "__label": "Present Variables",
+                    "__collapse": true
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_PEEK_DATA",
+                        "args": {
+                          "variableDest": "22",
+                          "variableSource": "22",
+                          "saveSlot": 0,
+                          "__collapse": true,
+                          "__label": "Month1"
+                        },
+                        "id": "bf553afb-2578-43b0-a92f-21e8b0a76aee"
+                      },
+                      {
+                        "command": "EVENT_PEEK_DATA",
+                        "args": {
+                          "variableDest": "23",
+                          "variableSource": "23",
+                          "saveSlot": 0,
+                          "__collapse": true,
+                          "__label": "Month2"
+                        },
+                        "id": "ff31662f-41dd-44bd-a03c-5c36c14bb73b"
+                      },
+                      {
+                        "command": "EVENT_PEEK_DATA",
+                        "args": {
+                          "variableDest": "24",
+                          "variableSource": "24",
+                          "saveSlot": 0,
+                          "__collapse": true,
+                          "__label": "Month3"
+                        },
+                        "id": "dded994d-6cd1-4d70-ab74-0d12ef609a38"
+                      },
+                      {
+                        "command": "EVENT_PEEK_DATA",
+                        "args": {
+                          "variableDest": "25",
+                          "variableSource": "25",
+                          "saveSlot": 0,
+                          "__collapse": true,
+                          "__label": "Day1"
+                        },
+                        "id": "1548b6c5-a5e4-4f26-8ec1-c26ca27cf01f"
+                      },
+                      {
+                        "command": "EVENT_PEEK_DATA",
+                        "args": {
+                          "variableDest": "26",
+                          "variableSource": "26",
+                          "saveSlot": 0,
+                          "__collapse": true,
+                          "__label": "Day2"
+                        },
+                        "id": "88048c1c-29cf-40c5-a73d-32acfd9ac32b"
+                      },
+                      {
+                        "command": "EVENT_PEEK_DATA",
+                        "args": {
+                          "variableDest": "27",
+                          "variableSource": "27",
+                          "saveSlot": 0,
+                          "__collapse": true,
+                          "__label": "Year1"
+                        },
+                        "id": "f48f2950-2423-4cac-b8c6-0036fe28672e"
+                      },
+                      {
+                        "command": "EVENT_PEEK_DATA",
+                        "args": {
+                          "variableDest": "28",
+                          "variableSource": "28",
+                          "saveSlot": 0,
+                          "__collapse": true,
+                          "__label": "Year2"
+                        },
+                        "id": "4c24af42-8455-4989-bf4c-fc5a9187c6dc"
+                      },
+                      {
+                        "command": "EVENT_PEEK_DATA",
+                        "args": {
+                          "variableDest": "29",
+                          "variableSource": "29",
+                          "saveSlot": 0,
+                          "__collapse": true,
+                          "__label": "Year3"
+                        },
+                        "id": "f42c48c1-a9c1-476f-bb61-6cef85bb2b67"
+                      },
+                      {
+                        "command": "EVENT_PEEK_DATA",
+                        "args": {
+                          "variableDest": "30",
+                          "variableSource": "30",
+                          "saveSlot": 0,
+                          "__collapse": true,
+                          "__label": "Year4"
+                        },
+                        "id": "0564bb04-2a04-4517-88ca-398a0cf8b046"
+                      },
+                      {
+                        "command": "EVENT_PEEK_DATA",
+                        "args": {
+                          "variableDest": "32",
+                          "variableSource": "32",
+                          "saveSlot": 0,
+                          "__collapse": true,
+                          "__label": "HourPM"
+                        },
+                        "id": "ce4fcec2-cc1b-4d2d-b413-996a3ff8d389"
+                      },
+                      {
+                        "command": "EVENT_PEEK_DATA",
+                        "args": {
+                          "variableDest": "33",
+                          "variableSource": "33",
+                          "saveSlot": 0,
+                          "__collapse": true,
+                          "__label": "Hour1"
+                        },
+                        "id": "866c4f71-08dd-4f01-a232-c9d516534c60"
+                      },
+                      {
+                        "command": "EVENT_PEEK_DATA",
+                        "args": {
+                          "variableDest": "34",
+                          "variableSource": "34",
+                          "saveSlot": 0,
+                          "__collapse": true,
+                          "__label": "Hour2"
+                        },
+                        "id": "8ecc5db9-b577-4a59-bf82-2ed2f8cbd85d"
+                      },
+                      {
+                        "command": "EVENT_PEEK_DATA",
+                        "args": {
+                          "variableDest": "35",
+                          "variableSource": "35",
+                          "saveSlot": 0,
+                          "__collapse": true,
+                          "__label": "Minute1"
+                        },
+                        "id": "2879f95d-6dda-4a13-bc2d-d8342940d296"
+                      },
+                      {
+                        "command": "EVENT_PEEK_DATA",
+                        "args": {
+                          "variableDest": "36",
+                          "variableSource": "36",
+                          "saveSlot": 0,
+                          "__collapse": true,
+                          "__label": "Minute2"
+                        },
+                        "id": "3000b0d8-5d85-4258-9387-34677f4a2e31"
+                      }
+                    ]
+                  },
+                  "id": "6398dd66-41c3-4624-b3ae-d57aaea069ff"
+                },
+                {
+                  "command": "EVENT_GROUP",
+                  "args": {
+                    "__label": "Last Departed Variables",
+                    "__collapse": true
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_PEEK_DATA",
+                        "args": {
+                          "variableDest": "37",
+                          "variableSource": "37",
+                          "saveSlot": 0,
+                          "__collapse": true,
+                          "__label": "Month1"
+                        },
+                        "id": "6ba138c7-590f-4a58-969c-8abb127f2020"
+                      },
+                      {
+                        "command": "EVENT_PEEK_DATA",
+                        "args": {
+                          "variableDest": "38",
+                          "variableSource": "38",
+                          "saveSlot": 0,
+                          "__collapse": true,
+                          "__label": "Month2"
+                        },
+                        "id": "eabaa714-5b58-46e6-a655-83600c9bbd51"
+                      },
+                      {
+                        "command": "EVENT_PEEK_DATA",
+                        "args": {
+                          "variableDest": "39",
+                          "variableSource": "39",
+                          "saveSlot": 0,
+                          "__collapse": true,
+                          "__label": "Month3"
+                        },
+                        "id": "61f191d8-1310-442e-8dcc-6c57b006ae68"
+                      },
+                      {
+                        "command": "EVENT_PEEK_DATA",
+                        "args": {
+                          "variableDest": "40",
+                          "variableSource": "40",
+                          "saveSlot": 0,
+                          "__collapse": true,
+                          "__label": "Day1"
+                        },
+                        "id": "26652e76-9e10-445a-a32b-9cae3dcc71b0"
+                      },
+                      {
+                        "command": "EVENT_PEEK_DATA",
+                        "args": {
+                          "variableDest": "41",
+                          "variableSource": "41",
+                          "saveSlot": 0,
+                          "__collapse": true,
+                          "__label": "Day2"
+                        },
+                        "id": "d3073575-2673-4efb-b88d-6b766294c455"
+                      },
+                      {
+                        "command": "EVENT_PEEK_DATA",
+                        "args": {
+                          "variableDest": "42",
+                          "variableSource": "42",
+                          "saveSlot": 0,
+                          "__collapse": true,
+                          "__label": "Year1"
+                        },
+                        "id": "b5063fa7-1446-46e4-a66e-3ef1e372909e"
+                      },
+                      {
+                        "command": "EVENT_PEEK_DATA",
+                        "args": {
+                          "variableDest": "43",
+                          "variableSource": "43",
+                          "saveSlot": 0,
+                          "__collapse": true,
+                          "__label": "Year2"
+                        },
+                        "id": "b76ae37f-9ac6-455c-9f1b-7d290c4eda32"
+                      },
+                      {
+                        "command": "EVENT_PEEK_DATA",
+                        "args": {
+                          "variableDest": "44",
+                          "variableSource": "44",
+                          "saveSlot": 0,
+                          "__collapse": true,
+                          "__label": "Year3"
+                        },
+                        "id": "fd8c6b74-386c-4047-afbb-e3f1f5b4a19e"
+                      },
+                      {
+                        "command": "EVENT_PEEK_DATA",
+                        "args": {
+                          "variableDest": "45",
+                          "variableSource": "45",
+                          "saveSlot": 0,
+                          "__collapse": true,
+                          "__label": "Year4"
+                        },
+                        "id": "38a3ec53-fd29-47e0-9e1a-3459b190637b"
+                      },
+                      {
+                        "command": "EVENT_PEEK_DATA",
+                        "args": {
+                          "variableDest": "46",
+                          "variableSource": "46",
+                          "saveSlot": 0,
+                          "__collapse": true,
+                          "__label": "HourPM"
+                        },
+                        "id": "e823dc7e-c54e-47ef-ae83-1c08cb2b1318"
+                      },
+                      {
+                        "command": "EVENT_PEEK_DATA",
+                        "args": {
+                          "variableDest": "47",
+                          "variableSource": "47",
+                          "saveSlot": 0,
+                          "__collapse": true,
+                          "__label": "Hour1"
+                        },
+                        "id": "7e66ff26-9ced-40a1-870b-ea30ec4d7680"
+                      },
+                      {
+                        "command": "EVENT_PEEK_DATA",
+                        "args": {
+                          "variableDest": "48",
+                          "variableSource": "48",
+                          "saveSlot": 0,
+                          "__collapse": true,
+                          "__label": "Hour2"
+                        },
+                        "id": "d41c2c23-8794-4d3e-beba-1d2d9d077cfd"
+                      },
+                      {
+                        "command": "EVENT_PEEK_DATA",
+                        "args": {
+                          "variableDest": "49",
+                          "variableSource": "49",
+                          "saveSlot": 0,
+                          "__collapse": true,
+                          "__label": "Minute1"
+                        },
+                        "id": "d98c3a85-7c40-4457-95ad-f5589ab0a8c9"
+                      },
+                      {
+                        "command": "EVENT_PEEK_DATA",
+                        "args": {
+                          "variableDest": "50",
+                          "variableSource": "50",
+                          "saveSlot": 0,
+                          "__collapse": true,
+                          "__label": "Minute2"
+                        },
+                        "id": "b536b588-fd99-4b2b-b53a-e7641aaf4b02"
+                      }
+                    ]
+                  },
+                  "id": "adb2ff34-3311-4c5c-8553-e6f562897937"
+                }
+              ]
+            },
+            "id": "be0c0399-635a-42a3-b281-ccaeb82ada69"
+          }
+        ],
+        "false": []
+      },
+      "id": "05d89f27-33a6-48c4-960a-aa861ee75611"
+    },
+    {
       "command": "EVENT_ACTOR_SHOW",
       "args": {
         "actorId": "$self$",
-        "__collapse": false
+        "__collapse": true
       },
       "id": "9879b095-eb54-4a21-a3de-d505214047bf"
     },
@@ -113,7 +720,8 @@
       "args": {
         "actorId": "$self$",
         "spriteStateId": "",
-        "loopAnim": false
+        "loopAnim": false,
+        "__collapse": true
       },
       "id": "ed2d192e-956c-402f-aa18-809c5495d6cd"
     },
@@ -125,7 +733,7 @@
           "type": "number",
           "value": 1
         },
-        "__collapse": false
+        "__collapse": true
       },
       "id": "151e32d1-73ba-42f1-a956-6e757f3da3a8"
     },
@@ -657,7 +1265,8 @@
                       "value": 16
                     },
                     "direction": "",
-                    "fadeSpeed": "2"
+                    "fadeSpeed": "2",
+                    "__collapse": true
                   },
                   "id": "cb223b55-3ab9-4fcc-8eb3-38315552231d"
                 }

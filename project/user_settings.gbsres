@@ -1,13 +1,13 @@
 {
   "_resourceType": "settings",
-  "worldScrollX": 386,
-  "worldScrollY": 249,
-  "zoom": 137.5,
+  "worldScrollX": 1757,
+  "worldScrollY": 665,
+  "zoom": 287.5,
   "navigatorSplitSizes": [
-    201,
-    118,
-    273,
-    322
+    208,
+    148,
+    321,
+    270
   ],
   "showNavigator": true,
   "showCollisions": true,
@@ -27,15 +27,26 @@
     "EVENT_IF",
     "EVENT_SET_VALUE",
     "EVENT_COMMENT",
-    "EVENT_ACTOR_SET_STATE"
+    "EVENT_ACTOR_SET_STATE",
+    "EVENT_INC_VALUE"
   ],
   "debuggerEnabled": true,
   "debuggerScriptType": "editor",
-  "debuggerVariablesFilter": "all",
-  "debuggerCollapsedPanes": [],
+  "debuggerVariablesFilter": "watched",
+  "debuggerCollapsedPanes": [
+    "vram",
+    "state"
+  ],
   "debuggerPauseOnScriptChanged": false,
   "debuggerPauseOnWatchedVariableChanged": false,
   "debuggerBreakpoints": [],
-  "debuggerWatchedVariables": [],
+  "debuggerWatchedVariables": [
+    "51",
+    "36",
+    "35",
+    "34",
+    "33",
+    "32"
+  ],
   "openBuildLogOnWarnings": true
 }

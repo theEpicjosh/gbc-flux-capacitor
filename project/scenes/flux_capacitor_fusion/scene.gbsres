@@ -19,10 +19,70 @@
     "49067f98-9d5d-4866-8459-077be0d8954f",
     "b77be94b-beca-46d8-854e-edf0ac5832ed"
   ],
-  "autoFadeSpeed": 2,
+  "autoFadeSpeed": null,
   "autoFadeEventCollapse": true,
   "playerSpriteSheetId": "53c57371-21a5-4e22-8696-fefc27da224c",
   "script": [
+    {
+      "command": "EVENT_IF_SAVED_DATA",
+      "args": {
+        "saveSlot": 0,
+        "__collapseElse": true,
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "gt",
+                "valueA": {
+                  "type": "variable",
+                  "value": "36"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 18
+                }
+              },
+              "__collapseElse": true,
+              "__disableElse": true,
+              "__collapse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_THREAD_START",
+                  "args": {
+                    "variable": "31",
+                    "__scriptTabs": "true",
+                    "__collapse": true,
+                    "__label": "Clock Thread Start"
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_CALL_CUSTOM_EVENT",
+                        "args": {
+                          "customEventId": "803f9e73-b1eb-4c6d-b54d-ed42d2066855"
+                        },
+                        "id": "5cad1aa4-f034-4f64-b56f-29249e7955da"
+                      }
+                    ]
+                  },
+                  "id": "5e2bc596-236b-4b59-ab65-f5b6a8c6a53c"
+                }
+              ],
+              "false": []
+            },
+            "id": "cb12af69-f381-4981-ba7c-e845e74510d0"
+          }
+        ],
+        "false": []
+      },
+      "id": "e4f189bf-bb0e-4618-a79e-e241816d1c86"
+    },
     {
       "command": "EVENT_ACTOR_HIDE",
       "args": {
@@ -47,7 +107,7 @@
           "type": "number",
           "value": 1
         },
-        "__collapse": false
+        "__collapse": true
       },
       "id": "ada95d23-e1fe-470a-80b2-044f73cb1801"
     },
@@ -683,6 +743,14 @@
         ]
       },
       "id": "a8fa38d8-c699-4568-884f-559e63e42f9a"
+    },
+    {
+      "command": "EVENT_FADE_IN",
+      "args": {
+        "speed": "2",
+        "__collapse": true
+      },
+      "id": "a5b80a61-5b05-4eeb-bbb8-84a0d55e3630"
     },
     {
       "command": "EVENT_IF",

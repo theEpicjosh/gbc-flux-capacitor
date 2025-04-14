@@ -200,7 +200,7 @@
               ],
               "override": true,
               "__scriptTabs": "press",
-              "__collapse": false
+              "__collapse": true
             },
             "children": {
               "true": [
@@ -698,7 +698,7 @@
                     "true": [],
                     "load": []
                   },
-                  "id": "2c7d82c4-63b7-4213-bb6f-4aab50f44922"
+                  "id": "fa1a3f17-390b-4663-a241-b5beec14363f"
                 },
                 {
                   "command": "EVENT_GROUP",
@@ -1048,7 +1048,7 @@
                   "command": "EVENT_MUSIC_PLAY",
                   "args": {
                     "musicId": "1110720a-74a8-4ef8-8cf6-ce4249372476",
-                    "__collapse": true
+                    "__collapse": false
                   },
                   "id": "af014e8d-834b-434d-9246-50501eb57353"
                 }

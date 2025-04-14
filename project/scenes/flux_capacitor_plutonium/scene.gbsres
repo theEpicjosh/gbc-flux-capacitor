@@ -18,10 +18,71 @@
     "",
     "49067f98-9d5d-4866-8459-077be0d8954f"
   ],
-  "autoFadeSpeed": 2,
+  "autoFadeSpeed": null,
   "autoFadeEventCollapse": true,
   "playerSpriteSheetId": "961c730e-4ad6-462b-99f1-ef07aefc7b9b",
   "script": [
+    {
+      "command": "EVENT_IF_SAVED_DATA",
+      "args": {
+        "saveSlot": 0,
+        "__collapseElse": true,
+        "__collapse": true,
+        "__comment": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "gt",
+                "valueA": {
+                  "type": "variable",
+                  "value": "36"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 18
+                }
+              },
+              "__collapseElse": true,
+              "__disableElse": true,
+              "__collapse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_THREAD_START",
+                  "args": {
+                    "variable": "31",
+                    "__scriptTabs": "true",
+                    "__collapse": true,
+                    "__label": "Clock Thread Start"
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_CALL_CUSTOM_EVENT",
+                        "args": {
+                          "customEventId": "803f9e73-b1eb-4c6d-b54d-ed42d2066855"
+                        },
+                        "id": "8468abd8-24a9-41ea-8eb6-7b4bdb56e33a"
+                      }
+                    ]
+                  },
+                  "id": "11d21879-e033-4632-871d-4fb6efcb90bc"
+                }
+              ],
+              "false": []
+            },
+            "id": "97ea72f1-c412-4c3e-a40e-1c22d790ff42"
+          }
+        ],
+        "false": []
+      },
+      "id": "1ac1450b-481e-4461-964a-8fcc798bebd5"
+    },
     {
       "command": "EVENT_ACTOR_HIDE",
       "args": {
@@ -662,6 +723,15 @@
         ]
       },
       "id": "48f83eb4-8de5-4af3-a5ec-35288ccd6900"
+    },
+    {
+      "command": "EVENT_FADE_IN",
+      "args": {
+        "speed": "2",
+        "__comment": false,
+        "__collapse": true
+      },
+      "id": "69e32f55-8efe-4c39-bc3f-a7e6f19c4227"
     },
     {
       "command": "EVENT_IF",

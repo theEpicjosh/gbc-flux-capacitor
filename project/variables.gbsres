@@ -157,6 +157,11 @@
       "symbol": "var_tcpyear_04"
     },
     {
+      "id": "31",
+      "name": "ThreadClockStart",
+      "symbol": "var_threadclockstart"
+    },
+    {
       "id": "32",
       "name": "TCPHourPM",
       "symbol": "var_tcphourpm"
@@ -252,6 +257,11 @@
       "symbol": "var_tclmin_02"
     },
     {
+      "id": "51",
+      "name": "RTCSeconds",
+      "symbol": "var_rtcseconds"
+    },
+    {
       "id": "22e853ee-1260-413f-a819-4dda0e89f72b__L0",
       "name": "Local 0",
       "symbol": "var_local_0"
@@ -338,6 +348,11 @@
       "id": "432ecace-6e03-412b-9fd7-aec3711c76bc__L0",
       "name": "Local 0",
       "symbol": "var_local_5"
+    },
+    {
+      "id": "f1dc3dc3-ca05-408a-9428-0be20ef022b3__L0",
+      "name": "Local 0",
+      "symbol": "var_local_3"
     }
   ]
 }
