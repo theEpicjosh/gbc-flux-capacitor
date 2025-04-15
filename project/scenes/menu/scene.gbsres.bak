@@ -268,7 +268,8 @@
           }
         },
         "__collapseElse": false,
-        "__disableElse": true
+        "__disableElse": true,
+        "__collapse": true
       },
       "children": {
         "true": [

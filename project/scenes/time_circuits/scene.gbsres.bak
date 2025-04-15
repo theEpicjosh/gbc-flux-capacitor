@@ -41,8 +41,9 @@
       "args": {
         "saveSlot": 0,
         "__collapseElse": true,
-        "__collapse": false,
-        "__comment": false
+        "__collapse": true,
+        "__comment": false,
+        "__disableElse": true
       },
       "children": {
         "true": [
@@ -646,7 +647,7 @@
         ],
         "override": true,
         "__scriptTabs": "press",
-        "__collapse": true
+        "__collapse": false
       },
       "children": {
         "true": [
@@ -2662,7 +2663,7 @@
       "args": {
         "__label": "Time Circuit Variables",
         "__comment": false,
-        "__collapse": false
+        "__collapse": true
       },
       "children": {
         "true": [

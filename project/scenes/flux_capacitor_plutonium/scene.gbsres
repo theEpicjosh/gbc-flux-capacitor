@@ -482,7 +482,7 @@
         ],
         "override": true,
         "__scriptTabs": "press",
-        "__collapse": true
+        "__collapse": false
       },
       "children": {
         "true": [
@@ -506,8 +506,21 @@
               "true": [
                 {
                   "command": "EVENT_MUSIC_STOP",
-                  "args": {},
+                  "args": {
+                    "__collapse": true
+                  },
                   "id": "68dcfbd8-c37e-47f6-a3fd-067cfee7ca14"
+                },
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "55",
+                    "value": {
+                      "type": "true"
+                    },
+                    "__collapse": true
+                  },
+                  "id": "395892ce-a482-49ed-ac6d-f160b278da57"
                 },
                 {
                   "command": "EVENT_SET_VALUE",
@@ -516,7 +529,8 @@
                     "value": {
                       "type": "number",
                       "value": 0
-                    }
+                    },
+                    "__collapse": true
                   },
                   "id": "f1cea65f-499d-4fb6-8035-b247c85fd658"
                 },
@@ -534,7 +548,7 @@
                     },
                     "direction": "",
                     "fadeSpeed": "2",
-                    "__collapse": false
+                    "__collapse": true
                   },
                   "id": "01a88d1f-7b51-49c6-81b8-a1e4dee0fbd4"
                 }
@@ -582,28 +596,6 @@
                     "__collapse": true
                   },
                   "id": "eb96b5ad-4c4f-40da-b9ff-526e3cec80da"
-                },
-                {
-                  "command": "EVENT_SET_VALUE",
-                  "args": {
-                    "variable": "55",
-                    "value": {
-                      "type": "true"
-                    },
-                    "__collapse": true
-                  },
-                  "id": "395892ce-a482-49ed-ac6d-f160b278da57"
-                },
-                {
-                  "command": "EVENT_SET_VALUE",
-                  "args": {
-                    "variable": "19",
-                    "value": {
-                      "type": "number",
-                      "value": 0
-                    }
-                  },
-                  "id": "704cb623-e596-4d60-a7dd-9a0bd198b751"
                 },
                 {
                   "command": "EVENT_SWITCH_SCENE",

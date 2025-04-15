@@ -577,6 +577,13 @@
             "children": {
               "true": [
                 {
+                  "command": "EVENT_MUSIC_STOP",
+                  "args": {
+                    "__collapse": true
+                  },
+                  "id": "eb96b5ad-4c4f-40da-b9ff-526e3cec80da"
+                },
+                {
                   "command": "EVENT_SET_VALUE",
                   "args": {
                     "variable": "55",
@@ -586,6 +593,17 @@
                     "__collapse": true
                   },
                   "id": "395892ce-a482-49ed-ac6d-f160b278da57"
+                },
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "19",
+                    "value": {
+                      "type": "number",
+                      "value": 0
+                    }
+                  },
+                  "id": "704cb623-e596-4d60-a7dd-9a0bd198b751"
                 },
                 {
                   "command": "EVENT_SWITCH_SCENE",
