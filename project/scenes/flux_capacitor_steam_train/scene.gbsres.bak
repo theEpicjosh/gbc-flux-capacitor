@@ -28,7 +28,7 @@
     "49067f98-9d5d-4866-8459-077be0d8954f",
     "93b74d44-5f6a-4715-af5a-16cdb505a3b4"
   ],
-  "autoFadeSpeed": 2,
+  "autoFadeSpeed": null,
   "autoFadeEventCollapse": true,
   "playerSpriteSheetId": "",
   "script": [

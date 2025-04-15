@@ -35,7 +35,7 @@
   "defaultFontId": "4bd653f0-e08d-424e-9e5b-c1f3aaa21e47",
   "defaultCharacterEncoding": "",
   "defaultPlayerSprites": {
-    "TOPDOWN": "",
+    "TOPDOWN": "41701a94-9d00-4dce-938a-6ec4a5452e86",
     "PLATFORM": "",
     "ADVENTURE": "",
     "SHMUP": "",
@@ -43,7 +43,7 @@
     "LOGO": ""
   },
   "musicDriver": "huge",
-  "cartType": "mbc3",
+  "cartType": "mbc5",
   "batterylessEnabled": false,
   "customColorsWhite": "E8F8E0",
   "customColorsLight": "B0F088",

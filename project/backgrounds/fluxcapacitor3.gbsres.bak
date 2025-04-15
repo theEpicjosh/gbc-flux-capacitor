@@ -8,6 +8,6 @@
   "imageWidth": 160,
   "imageHeight": 144,
   "filename": "fluxcapacitor3.png",
-  "autoColor": true,
-  "tileColors": "00168+"
+  "tileColors": "00168+",
+  "autoColor": true
 }

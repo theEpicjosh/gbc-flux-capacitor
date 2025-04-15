@@ -524,6 +524,18 @@
             "id": "28ead6f4-9728-4095-8413-d518e53ba6e9"
           },
           {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "51",
+              "value": {
+                "type": "number",
+                "value": 0
+              },
+              "__collapse": true
+            },
+            "id": "28381b8b-b44f-45d0-b01f-b1e17c8cd21a"
+          },
+          {
             "command": "EVENT_THREAD_START",
             "args": {
               "variable": "31",

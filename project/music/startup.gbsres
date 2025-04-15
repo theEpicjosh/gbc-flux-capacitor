@@ -1,0 +1,9 @@
+{
+  "_resourceType": "music",
+  "id": "b08c2b01-ebc9-4474-8c00-ddc06a102e87",
+  "name": "startup",
+  "symbol": "song_startup",
+  "filename": "startup.uge",
+  "settings": {},
+  "type": "uge"
+}

@@ -465,7 +465,7 @@
       "command": "EVENT_GROUP",
       "args": {
         "__label": "Save and RTC",
-        "__collapse": true
+        "__collapse": false
       },
       "children": {
         "true": [
@@ -849,6 +849,18 @@
               "__collapse": true
             },
             "id": "cc1346f5-f166-4b32-9ebb-76a6e9c87aba"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "51",
+              "value": {
+                "type": "number",
+                "value": 0
+              },
+              "__collapse": true
+            },
+            "id": "8abb6dd5-52e1-430d-8633-a476b0b4f3aa"
           },
           {
             "command": "EVENT_THREAD_START",

@@ -1,13 +1,13 @@
 {
   "_resourceType": "settings",
-  "worldScrollX": 2138,
-  "worldScrollY": 659.5,
+  "worldScrollX": 1066,
+  "worldScrollY": 599,
   "zoom": 288.3340401421301,
   "navigatorSplitSizes": [
-    208,
-    148,
-    321,
-    270
+    168,
+    30,
+    365,
+    382
   ],
   "showNavigator": true,
   "showCollisions": true,
@@ -32,21 +32,31 @@
   ],
   "debuggerEnabled": true,
   "debuggerScriptType": "editor",
-  "debuggerVariablesFilter": "watched",
+  "debuggerVariablesFilter": "all",
   "debuggerCollapsedPanes": [
     "vram",
     "state"
   ],
   "debuggerPauseOnScriptChanged": false,
   "debuggerPauseOnWatchedVariableChanged": false,
-  "debuggerBreakpoints": [],
+  "debuggerBreakpoints": [
+    {
+      "scriptEventId": "343e45df-f6bd-4aea-8dc1-da78748f3387",
+      "context": {
+        "type": "entity",
+        "entityType": "trigger",
+        "entityId": "762f5428-b206-4431-bd6c-6c80a2e56f31",
+        "sceneId": "7f41883b-8f4c-47dc-a395-39294d6e7985",
+        "scriptKey": "script"
+      }
+    }
+  ],
   "debuggerWatchedVariables": [
-    "51",
-    "36",
-    "35",
-    "34",
-    "33",
-    "32"
+    "8",
+    "9",
+    "16",
+    "17",
+    "18"
   ],
   "openBuildLogOnWarnings": true
 }

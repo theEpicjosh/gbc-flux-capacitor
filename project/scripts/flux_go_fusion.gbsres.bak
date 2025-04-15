@@ -454,6 +454,30 @@
                 {
                   "command": "EVENT_SET_VALUE",
                   "args": {
+                    "variable": "52",
+                    "value": {
+                      "type": "variable",
+                      "value": "0"
+                    },
+                    "__collapse": true
+                  },
+                  "id": "3e7adbf3-2bac-4796-8b62-41d2fbd43b38"
+                },
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "53",
+                    "value": {
+                      "type": "variable",
+                      "value": "1"
+                    },
+                    "__collapse": true
+                  },
+                  "id": "2746377a-ed8a-4090-ba64-5d734481ed0d"
+                },
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
                     "variable": "22",
                     "value": {
                       "type": "variable",
@@ -643,6 +667,18 @@
               "__collapse": true
             },
             "id": "c9ab710d-6ae5-4758-952c-784b5ba31023"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "51",
+              "value": {
+                "type": "number",
+                "value": 0
+              },
+              "__collapse": true
+            },
+            "id": "503ad4df-6551-4450-8557-16da5cf3c8b8"
           },
           {
             "command": "EVENT_THREAD_START",

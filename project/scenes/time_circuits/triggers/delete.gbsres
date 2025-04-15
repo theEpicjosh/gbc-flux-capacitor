@@ -247,10 +247,19 @@
                       }
                     },
                     "__collapseElse": true,
-                    "__collapse": true
+                    "__collapse": false,
+                    "__disableElse": true
                   },
                   "children": {
                     "true": [
+                      {
+                        "command": "EVENT_CALL_CUSTOM_EVENT",
+                        "args": {
+                          "customEventId": "cc5486cc-dd8d-44f3-bdfb-9bdc0349e320",
+                          "__collapse": true
+                        },
+                        "id": "6e1fc44c-0ad7-4494-a99f-fccd0710202d"
+                      },
                       {
                         "command": "EVENT_DEC_VALUE",
                         "args": {
@@ -269,14 +278,6 @@
                     ]
                   },
                   "id": "686c273c-d251-4984-996f-5719ea3e7eb3"
-                },
-                {
-                  "command": "EVENT_COMMENT",
-                  "args": {
-                    "text": "[ Attach Back Animation Here ]",
-                    "__collapse": true
-                  },
-                  "id": "2f9821b6-ea48-4257-902b-1ed21dd6fc89"
                 }
               ]
             },

@@ -19,7 +19,7 @@
     "49067f98-9d5d-4866-8459-077be0d8954f",
     "b77be94b-beca-46d8-854e-edf0ac5832ed"
   ],
-  "autoFadeSpeed": 2,
+  "autoFadeSpeed": null,
   "autoFadeEventCollapse": true,
   "playerSpriteSheetId": "53c57371-21a5-4e22-8696-fefc27da224c",
   "script": [

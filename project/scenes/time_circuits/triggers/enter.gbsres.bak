@@ -219,7 +219,7 @@
                       }
                     },
                     "__collapseElse": false,
-                    "__collapse": true
+                    "__collapse": false
                   },
                   "children": {
                     "true": [
@@ -255,7 +255,64 @@
                         "id": "044b8bfe-91de-4d99-b738-aae31a810d8a"
                       }
                     ],
-                    "false": []
+                    "false": [
+                      {
+                        "command": "EVENT_IF",
+                        "args": {
+                          "condition": {
+                            "type": "eq",
+                            "valueA": {
+                              "type": "variable",
+                              "value": "11"
+                            },
+                            "valueB": {
+                              "type": "number",
+                              "value": 0
+                            }
+                          },
+                          "__collapseElse": false,
+                          "__collapse": false,
+                          "__disableElse": true
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "command": "EVENT_MUSIC_PLAY",
+                              "args": {
+                                "musicId": "d428153e-3c48-42f1-b934-f7c01cad805f",
+                                "__collapse": true
+                              },
+                              "id": "5ab1f493-971d-4a02-922c-6efc0bcad4fd"
+                            },
+                            {
+                              "command": "EVENT_WAIT",
+                              "args": {
+                                "time": 0.25,
+                                "frames": 30,
+                                "__collapse": true
+                              },
+                              "id": "114a8683-0275-4a1b-8a9e-4bc440a040b4"
+                            },
+                            {
+                              "command": "EVENT_MUSIC_STOP",
+                              "args": {
+                                "__collapse": true
+                              },
+                              "id": "3c14f7f2-55f6-4035-a3b6-fd3214f255b4"
+                            },
+                            {
+                              "command": "EVENT_STOP",
+                              "args": {
+                                "__collapse": true
+                              },
+                              "id": "413d38cd-dc9d-49a8-8730-65306456796a"
+                            }
+                          ],
+                          "false": []
+                        },
+                        "id": "79a82230-f5c3-4d1a-9419-dd8616efebcd"
+                      }
+                    ]
                   },
                   "id": "5940da00-d2d4-4543-8e31-54de32542316"
                 },
@@ -597,6 +654,76 @@
                   "id": "343e45df-f6bd-4aea-8dc1-da78748f3387"
                 },
                 {
+                  "command": "EVENT_GROUP",
+                  "args": {
+                    "__label": "Call Script: PostHourPM",
+                    "__collapse": true,
+                    "__comment": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_IF",
+                        "args": {
+                          "condition": {
+                            "type": "eq",
+                            "valueA": {
+                              "type": "variable",
+                              "value": "18"
+                            },
+                            "valueB": {
+                              "type": "number",
+                              "value": 0
+                            }
+                          },
+                          "__collapseElse": true,
+                          "__disableElse": true,
+                          "__collapse": true
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "command": "EVENT_SET_VALUE",
+                              "args": {
+                                "variable": "17",
+                                "value": {
+                                  "type": "variable",
+                                  "value": "8"
+                                }
+                              },
+                              "id": "9fd9aa2e-1b59-43f1-bb16-791d9757c99e"
+                            },
+                            {
+                              "command": "EVENT_SET_VALUE",
+                              "args": {
+                                "variable": "18",
+                                "value": {
+                                  "type": "variable",
+                                  "value": "9"
+                                }
+                              },
+                              "id": "1d203fe9-ce38-4d15-a4fb-07e521ec45f7"
+                            },
+                            {
+                              "command": "EVENT_SET_VALUE",
+                              "args": {
+                                "variable": "32",
+                                "value": {
+                                  "type": "false"
+                                }
+                              },
+                              "id": "00353a6c-3edf-40eb-ac08-d2200f7ca1b7"
+                            }
+                          ],
+                          "false": []
+                        },
+                        "id": "a64af0da-02a4-4038-a0ac-4860297ba6f9"
+                      }
+                    ]
+                  },
+                  "id": "eeddb40e-7dc9-4cf2-ae6c-4938ea4a87c7"
+                },
+                {
                   "command": "EVENT_IF",
                   "args": {
                     "condition": {
@@ -704,7 +831,7 @@
                   "command": "EVENT_GROUP",
                   "args": {
                     "__label": "Destination Reset",
-                    "__collapse": false
+                    "__collapse": true
                   },
                   "children": {
                     "true": [

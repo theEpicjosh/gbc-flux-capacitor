@@ -4,10 +4,6 @@
     {
       "id": "topdown_grid",
       "value": 8
-    },
-    {
-      "id": "fade_style",
-      "value": 0
     }
   ]
 }
