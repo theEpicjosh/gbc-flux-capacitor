@@ -139,7 +139,7 @@
         ],
         "override": true,
         "__scriptTabs": "press",
-        "__collapse": true
+        "__collapse": false
       },
       "children": {
         "true": [
@@ -157,14 +157,27 @@
                 }
               },
               "__collapseElse": true,
-              "__collapse": true
+              "__collapse": false
             },
             "children": {
               "true": [
                 {
                   "command": "EVENT_MUSIC_STOP",
-                  "args": {},
+                  "args": {
+                    "__collapse": true
+                  },
                   "id": "689fa763-2372-4f72-895a-867060409f2a"
+                },
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "55",
+                    "value": {
+                      "type": "true"
+                    },
+                    "__collapse": true
+                  },
+                  "id": "044878e7-2110-414a-9f19-70cdffa45aca"
                 },
                 {
                   "command": "EVENT_SET_VALUE",

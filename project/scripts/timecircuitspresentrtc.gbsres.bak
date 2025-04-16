@@ -421,7 +421,8 @@
                 {
                   "command": "EVENT_GROUP",
                   "args": {
-                    "__label": "MINUTE-02"
+                    "__label": "MINUTE-02",
+                    "__collapse": false
                   },
                   "children": {
                     "true": [
@@ -465,7 +466,8 @@
                             {
                               "command": "EVENT_GROUP",
                               "args": {
-                                "__label": "MINUTE-01"
+                                "__label": "MINUTE-01",
+                                "__collapse": true
                               },
                               "children": {
                                 "true": [
@@ -509,7 +511,8 @@
                                         {
                                           "command": "EVENT_GROUP",
                                           "args": {
-                                            "__label": "HOURS"
+                                            "__label": "HOURS",
+                                            "__collapse": true
                                           },
                                           "children": {
                                             "true": [

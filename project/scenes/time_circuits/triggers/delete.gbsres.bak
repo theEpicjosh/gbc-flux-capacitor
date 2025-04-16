@@ -247,18 +247,11 @@
                       }
                     },
                     "__collapseElse": true,
-                    "__collapse": false
+                    "__collapse": false,
+                    "__disableElse": true
                   },
                   "children": {
                     "true": [
-                      {
-                        "command": "EVENT_DEC_VALUE",
-                        "args": {
-                          "variable": "12",
-                          "__collapse": true
-                        },
-                        "id": "74005dff-3392-4a1e-8508-aed2e4185436"
-                      },
                       {
                         "command": "EVENT_CALL_CUSTOM_EVENT",
                         "args": {
@@ -266,6 +259,14 @@
                           "__collapse": true
                         },
                         "id": "6e1fc44c-0ad7-4494-a99f-fccd0710202d"
+                      },
+                      {
+                        "command": "EVENT_DEC_VALUE",
+                        "args": {
+                          "variable": "12",
+                          "__collapse": true
+                        },
+                        "id": "74005dff-3392-4a1e-8508-aed2e4185436"
                       }
                     ],
                     "false": [

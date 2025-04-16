@@ -60,7 +60,8 @@
       "command": "EVENT_GROUP",
       "args": {
         "__label": "Save and Reset RTCSeconds",
-        "__collapse": true
+        "__collapse": true,
+        "__comment": true
       },
       "children": {
         "true": [

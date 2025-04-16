@@ -162,6 +162,14 @@
                                     "id": "92ab4084-905f-4a9f-ab4a-1be71e5d0331"
                                   },
                                   {
+                                    "command": "EVENT_CLEAR_DATA",
+                                    "args": {
+                                      "saveSlot": 0,
+                                      "__collapse": true
+                                    },
+                                    "id": "d060463e-338e-4e4f-ba62-e40c4b960667"
+                                  },
+                                  {
                                     "command": "EVENT_FADE_OUT",
                                     "args": {
                                       "speed": 6,
@@ -193,17 +201,10 @@
                                       "closeButton": "a",
                                       "closeDelayTime": 0.5,
                                       "closeDelayFrames": 30,
-                                      "__collapse": true
+                                      "__collapse": true,
+                                      "__comment": true
                                     },
                                     "id": "6c231425-d5a8-45b8-b925-b21a4f57bfce"
-                                  },
-                                  {
-                                    "command": "EVENT_CLEAR_DATA",
-                                    "args": {
-                                      "saveSlot": 0,
-                                      "__collapse": true
-                                    },
-                                    "id": "d060463e-338e-4e4f-ba62-e40c4b960667"
                                   },
                                   {
                                     "command": "EVENT_TEXT",
@@ -227,7 +228,8 @@
                                       "closeButton": "a",
                                       "closeDelayTime": 0.5,
                                       "closeDelayFrames": 30,
-                                      "__collapse": true
+                                      "__collapse": true,
+                                      "__comment": true
                                     },
                                     "id": "54d3c14e-eb0e-4cc8-a1e0-d94a7b6105e4"
                                   }

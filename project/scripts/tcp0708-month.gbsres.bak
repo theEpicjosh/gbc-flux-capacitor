@@ -11,7 +11,7 @@
       "command": "EVENT_INC_VALUE",
       "args": {
         "variable": "53",
-        "__collapse": true
+        "__collapse": false
       },
       "id": "13d9b613-e613-4c60-b405-b69f6de4a187"
     },
@@ -31,7 +31,7 @@
         },
         "__collapseElse": true,
         "__disableElse": true,
-        "__collapse": false
+        "__collapse": true
       },
       "children": {
         "true": [
@@ -109,7 +109,7 @@
           }
         },
         "__collapseElse": true,
-        "__collapse": false,
+        "__collapse": true,
         "__disableElse": true
       },
       "children": {

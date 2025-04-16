@@ -326,10 +326,34 @@
             "command": "EVENT_GROUP",
             "args": {
               "__label": "Destination to Present Variables",
-              "__collapse": true
+              "__collapse": false
             },
             "children": {
               "true": [
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "52",
+                    "value": {
+                      "type": "variable",
+                      "value": "0"
+                    },
+                    "__collapse": true
+                  },
+                  "id": "2af45b08-e3d7-4572-a940-afa14c092ac5"
+                },
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "53",
+                    "value": {
+                      "type": "variable",
+                      "value": "1"
+                    },
+                    "__collapse": true
+                  },
+                  "id": "89f2d0d6-8b66-4468-a672-5366e4ab0a5e"
+                },
                 {
                   "command": "EVENT_SET_VALUE",
                   "args": {

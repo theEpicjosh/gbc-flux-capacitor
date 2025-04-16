@@ -43,7 +43,7 @@
     "LOGO": ""
   },
   "musicDriver": "huge",
-  "cartType": "mbc3",
+  "cartType": "mbc5",
   "batterylessEnabled": false,
   "customColorsWhite": "E8F8E0",
   "customColorsLight": "B0F088",

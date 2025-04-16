@@ -25,7 +25,7 @@
           },
           "valueB": {
             "type": "number",
-            "value": 20
+            "value": 21
           }
         },
         "__collapseElse": true,
@@ -53,6 +53,30 @@
             },
             "children": {
               "true": [
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "25",
+                    "value": {
+                      "type": "number",
+                      "value": 19
+                    },
+                    "__collapse": true
+                  },
+                  "id": "6cad63a0-b237-4f8e-ad9a-c28d0f6bf636"
+                },
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "26",
+                    "value": {
+                      "type": "number",
+                      "value": 20
+                    },
+                    "__collapse": true
+                  },
+                  "id": "99a7b9b3-63d8-4973-8c84-a32bdf62c655"
+                },
                 {
                   "command": "EVENT_CALL_CUSTOM_EVENT",
                   "args": {

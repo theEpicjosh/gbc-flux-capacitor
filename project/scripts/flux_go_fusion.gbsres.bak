@@ -447,7 +447,7 @@
             "command": "EVENT_GROUP",
             "args": {
               "__label": "Destination to Present Variables",
-              "__collapse": true
+              "__collapse": false
             },
             "children": {
               "true": [
